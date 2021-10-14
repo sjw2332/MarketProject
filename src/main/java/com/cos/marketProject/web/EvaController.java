@@ -10,4 +10,8 @@ public class EvaController {
 	public String youtubeEva() {
 		return "youtube/youtubeEva";
 	}
+	@GetMapping("/test")
+	public String test() {
+		return "youtube/evatest";
+	}
 }
