@@ -9,9 +9,9 @@ public class TestController {
 	public String 게시글상세보기() {
 		return "board/detail";
 	}
-	@GetMapping("/test/list")
+	@GetMapping("/test/contact")
 	public String 목록() {
-		return "board/list";
+		return "board/contact";
 	}
 	@GetMapping("/test/writeForm")
 	public String 게시글작성() {
