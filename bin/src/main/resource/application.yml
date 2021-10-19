@@ -6,8 +6,6 @@ spring:
     view:
       prefix: /WEB-INF/views/
       suffix: .jsp
-
-    static-path-pattern: /resources/** 
  
   datasource:
     driver-class-name: org.mariadb.jdbc.Driver
@@ -21,3 +19,4 @@ spring:
       naming:
         physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
     show-sql: true       
+
