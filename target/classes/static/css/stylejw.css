@@ -1,0 +1,171 @@
+@charset "UTF-8";
+
+.border-left-primary {
+  border-left: 0.25rem solid #4e73df !important;
+}
+
+.border-left-success {
+  border-left: 0.25rem solid #1cc88a !important;
+}
+
+.border-left-info {
+  border-left: 0.25rem solid #36b9cc !important;
+}
+
+.border-left-warning {
+  border-left: 0.25rem solid #f6c23e !important;
+}
+
+.border-left-danger {
+  border-left: 0.25rem solid #ff0080!important;
+}
+
+.h-100 {
+  height: 100% !important;
+}
+.pt-2,
+.py-2 {
+  padding-top: 0.5rem !important;
+}
+.mt-4 {
+position: relative; left:10px;
+}
+
+.pcard {
+    width: 350px;
+   /* background-color: ;*/
+    border: none;
+	position: relative;
+    cursor: pointer;
+    transition: all 0.5s
+}
+ th, td {
+ 	text-align: center;
+ }
+ 
+
+
+.pcard {
+    width: 350px;
+    background-color: #efefef;
+    border: none;
+    cursor: pointer;
+    transition: all 0.5s
+}
+.image img {
+    transition: all 0.5s
+}
+
+.pcard:hover .image img {
+    transform: scale(1.5)
+}
+
+.btn1 {
+    height: 40px;
+    width: 150px;
+    border: none;
+    background-color: #000;
+    color: #aeaeae;
+    font-size: 15px;
+    justify-content: center;
+} 
+
+#evabox {
+	margin-top:50px;	
+}
+
+/* #total1 {
+	max-width:100%
+}
+#total2 {
+	max-width:100%
+} */
+
+
+
+/*프로필 컨테이너*/
+.prof {
+	padding-top:30px;
+	display:flex;
+	align-content: center;
+}
+
+.prof .item {
+	padding: 20px;
+	
+}
+
+.container .item:nth-child(1) {
+	border-right: 1px solid black;
+	
+}
+
+.container .item:nth-child(2) {
+	max-width: 100%;
+	flex-grow: 1;
+	
+}
+
+
+.intro {
+	padding-left:50px;
+}
+
+
+/* 나의목록 */
+.avatar-xs {
+    height: 2.3rem;
+    width: 2.3rem;
+}
+
+
+/*List 카드*/
+.order-card {
+    color: #fff;
+}
+
+.bg-c-blue {
+    background: linear-gradient(45deg,#4099ff,#73b4ff);
+}
+
+.bg-c-green {
+    background: linear-gradient(45deg,#2ed8b6,#59e0c5);
+}
+
+.bg-c-yellow {
+    background: linear-gradient(45deg,#FFB64D,#ffcb80);
+}
+
+.bg-c-pink {
+    background: linear-gradient(45deg,#FF5370,#ff869a);
+}
+
+
+.lcard {
+    border-radius: 5px;
+    -webkit-box-shadow: 0 1px 2.94px 0.06px rgba(4,26,55,0.16);
+    box-shadow: 0 1px 2.94px 0.06px rgba(4,26,55,0.16);
+    border: none;
+    margin-bottom: 30px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.lcard .card-block {
+    padding: 25px;
+}
+
+.order-card i {
+    font-size: 26px;
+}
+
+.f-left {
+    float: left;
+}
+
+.f-right {
+    float: right;
+}
+
+
+
