@@ -11,12 +11,6 @@
 <meta content="" name="description">
 <meta content="" name="keywords">
 
-<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="js/bootstrap.js"></script>
-
-<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-
-
 
 <!-- Google Fonts -->
 <link
