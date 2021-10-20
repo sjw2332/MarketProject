@@ -25,12 +25,23 @@ public class TestController {
    }
 	
 	//------------------------------
-
+   //정인 추가-------------------
 	@GetMapping("/test/cash")
 	public String 나의마일리지() {
 		return "user/myCashForm";
 	}
 	
+	@GetMapping("/test/pay")
+	public String 마일리지충전() {
+		return "pay/pay";
+	}
+	
+	@GetMapping("/test/contact")
+	public String 고객센터() {
+		return "board/contact";
+	}
+	
+	//----------------------------
 	
 	@GetMapping("/test/update")
 	public String 회원정보변경() {
