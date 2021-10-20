@@ -16,8 +16,11 @@
 <script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
  
+ 	<!-- 링크 추가 재욱 -->
 	<link
-	href="resources/css/style.css" rel="stylesheet">
+	href="resources/css/stylejw.css" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet"> 
+	<!-- 링크 추가 재욱끝 -->
 <script
 	src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
 
