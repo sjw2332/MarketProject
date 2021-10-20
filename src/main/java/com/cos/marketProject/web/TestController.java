@@ -25,6 +25,10 @@ public class TestController {
 	public String 나의마일리지() {
 		return "user/myCashForm";
 	}
+	@GetMapping("/test/pay")
+	public String 마일리지충전() {
+		return "pay/pay";
+	}
 	
 	
 	@GetMapping("/test/update")

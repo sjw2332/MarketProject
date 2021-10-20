@@ -84,8 +84,8 @@
 										</ul></li>
 										<li class="dropdown"><a><span>Cash</span> <i class="bi bi-chevron-right"></i></a>
 										<ul>
-											<li><a href="#">My Cash</a></li>
-											<li><a href="#">Cash 충전</a></li>
+											<li><a href="/test/cash">My Cash</a></li>
+											<li><a href="/test/pay">Cash 충전</a></li>
 										</ul></li>
 								</ul></li>
 						</c:otherwise>
@@ -93,11 +93,11 @@
 					<!-- .navbar -->
 					<c:choose>
 						<c:when test="">
-							<a class="buy-tickets scrollto" href="/"
+							<a class="login-nav scrollto" href="/"
 								style="margin-left: 10px">Login</a>
 						</c:when>
 						<c:otherwise>
-							<a class="buy-tickets scrollto" href="/"
+							<a class="login-nav scrollto" href="/"
 								style="margin-left: 10px">Logout</a>
 						</c:otherwise>
 					</c:choose>

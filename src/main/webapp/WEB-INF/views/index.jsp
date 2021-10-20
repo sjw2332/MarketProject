@@ -67,68 +67,21 @@
 				</div>
 			</section>
 			<!-- ======= End 가치평가검색 form ======= -->
+
+
 		</div>
 	</section>
 	<!-- End main Section -->
-	<!-- ======= 리스트 Section ======= -->
-		<section id="list">
-
-			<div class="container" data-aos="fade-up">
-				<div class="section-header">
-					<h2>HOT</h2>
-					<p>인기매물리스트(구독자수)</p>
-				</div>
-			</div>
-
-			<div class="gallery-slider swiper">
-				<div class="swiper-wrapper align-items-center">
-					<div class="swiper-slide">
-						<a href="resources/img/gallery/1.jpg" class="gallery-lightbox"><img
-							src="resources/img/gallery/1.jpg" class="img-fluid" alt=""></a>
-					</div>
-					<div class="swiper-slide">
-						<a href="resources/img/gallery/2.jpg" class="gallery-lightbox"><img
-							src="resources/img/gallery/2.jpg" class="img-fluid" alt=""></a>
-					</div>
-					<div class="swiper-slide">
-						<a href="resources/img/gallery/3.jpg" class="gallery-lightbox"><img
-							src="resources/img/gallery/3.jpg" class="img-fluid" alt=""></a>
-					</div>
-					<div class="swiper-slide">
-						<a href="resources/img/gallery/4.jpg" class="list-lightbox"><img
-							src="resources/img/gallery/4.jpg" class="img-fluid" alt=""></a>
-					</div>
-					<div class="swiper-slide">
-						<a href="resources/img/gallery/5.jpg" class="list-lightbox"><img
-							src="resources/img/gallery/5.jpg" class="img-fluid" alt=""></a>
-					</div>
-					<div class="swiper-slide">
-						<a href="resources/img/gallery/6.jpg" class="list-lightbox"><img
-							src="resources/img/gallery/6.jpg" class="img-fluid" alt=""></a>
-					</div>
-					<div class="swiper-slide">
-						<a href="resources/img/gallery/7.jpg" class="list-lightbox"><img
-							src="resources/img/gallery/7.jpg" class="img-fluid" alt=""></a>
-					</div>
-					<div class="swiper-slide">
-						<a href="resources/img/gallery/8.jpg" class="list-lightbox"><img
-							src="resources/img/gallery/8.jpg" class="img-fluid" alt=""></a>
-					</div>
-				</div>
-				<div class="swiper-pagination"></div>
-			</div>
-
-		</section>
-		<!-- End Gallery Section -->
 
 
 
 
-	
 
 
-		<!-- ======= 가치평가 Section ======= -->
-		<!--   <section id="testValue">
+
+
+	<!-- ======= 가치평가 Section ======= -->
+	<!--   <section id="testValue">
       <div class="container" data-aos="zoom-in">
         <div class="section-header">
           <h2>가치평가</h2>
@@ -146,15 +99,64 @@
 
       </div> 
     </section> -->
-		<!-- End 가치평가 Section -->
+	<!-- End 가치평가 Section -->
 
+				<!-- ======= 리스트 Section ======= -->
+			<section id="list">
+
+				<div class="container" data-aos="fade-up">
+					<div class="section-header">
+						<h2>HOT</h2>
+						<p>인기매물리스트(구독자수)</p>
+					</div>
+				</div>
+		<div class="gallery-slider swiper">
+			<div class="swiper-wrapper align-items-center">
+				<div class="swiper-slide">
+					<a href="resources/img/gallery/1.jpg" class="gallery-lightbox"><img
+						src="resources/img/gallery/1.jpg" class="img-fluid" alt=""></a>
+				</div>
+				<div class="swiper-slide">
+					<a href="resources/img/gallery/2.jpg" class="gallery-lightbox"><img
+						src="resources/img/gallery/2.jpg" class="img-fluid" alt=""></a>
+				</div>
+				<div class="swiper-slide">
+					<a href="resources/img/gallery/3.jpg" class="gallery-lightbox"><img
+						src="resources/img/gallery/3.jpg" class="img-fluid" alt=""></a>
+				</div>
+				<div class="swiper-slide">
+					<a href="resources/img/gallery/4.jpg" class="list-lightbox"><img
+						src="resources/img/gallery/4.jpg" class="img-fluid" alt=""></a>
+				</div>
+				<div class="swiper-slide">
+					<a href="resources/img/gallery/5.jpg" class="list-lightbox"><img
+						src="resources/img/gallery/5.jpg" class="img-fluid" alt=""></a>
+				</div>
+				<div class="swiper-slide">
+					<a href="resources/img/gallery/6.jpg" class="list-lightbox"><img
+						src="resources/img/gallery/6.jpg" class="img-fluid" alt=""></a>
+				</div>
+				<div class="swiper-slide">
+					<a href="resources/img/gallery/7.jpg" class="list-lightbox"><img
+						src="resources/img/gallery/7.jpg" class="img-fluid" alt=""></a>
+				</div>
+				<div class="swiper-slide">
+					<a href="resources/img/gallery/8.jpg" class="list-lightbox"><img
+						src="resources/img/gallery/8.jpg" class="img-fluid" alt=""></a>
+				</div>
+			</div>
+			<div class="swiper-pagination"></div>
+		</div>
+
+	</section>
+	<!-- End Gallery Section -->
 
 
 
 
 	<!-- End #main -->
 
-		<%@include file="layout/footer.jsp"%>
+	<%@include file="layout/footer.jsp"%>
 
 	<a href="#"
 		class="back-to-top d-flex align-items-center justify-content-center"><i
