@@ -18,6 +18,11 @@ public class TestController {
 		return "board/writeForm";
 	}
 	
+   // 지희 추가
+   @GetMapping("/test/updateForm")
+   public String 게시글수정() {
+      return "board/updateForm";
+   }
 	
 	//------------------------------
 
