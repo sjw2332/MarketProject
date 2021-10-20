@@ -5,57 +5,26 @@
 
 <link href="/resources/css/user.css" rel="stylesheet"/>
 <style>
+
 </style>
 <body class="bgcolor">
 	<form method="post" action="">
 		<div class="container">
 			<div class="insert">
+
 				<table>
 					<tr>
 						<td class="col1">
-							<div style="top: 326px; left: 385px; width: 100px; height: 40px;">
-								<div data-text-content="true" class="butt">E-Mail</div>
-							</div>
-						</td>
-						<td class="col2"><input type="text" name="username" placeholder="메일주소를 입력해주세요" required="required">
-							<span class="a">@</span> <input type="text" name="email" placeholder="직접입력하시거나 선택해주세요" required="required">
-							<select name="email">
-								<option value="self" selected>직접입력</option>
-								<option value="naver">naver.com</option>
-								<option value="gm">gmail.com</option>
-								<option value="da">daum.com</option>
-						</select> <input class='but2' type="button" value="이메일 중복확인" onclick="">
-						</td>
-					</tr>
-
-					<tr>
-						<td class="col1">
-							<div style="top: 326px; left: 385px; width: 100px; height: 40px;">
-								<div data-text-content="true" class="butt">Password</div>
-							</div>
-						</td>
-						<td class="col2"><input type="password" name="password" placeholder="Password"
-							maxlength="70" required="required">
-							<p>
-								<span class="text">※ 비밀번호는</span>
-								<span class="num">문자, 숫자, 특수문자(~!@#$%^&*)의 조합</span>
-								<span class="text">으로 입력이 가능합니다.</span>
-							</p></td>
-					</tr>
-					<tr>
-						<td class="col1">
-							<div style="top: 326px; left: 385px; width: 100px; height: 40px;">
+							<div style="width: 120px; height: 40px;">
 								<div data-text-content="true" class="butt">Name</div>
 							</div>
 						</td>
-						<td class="col2"><input type="text" name="name" placeholder="Name" required="required"
-							maxlength="70"></td>
+						<td class="col2"><input style="width: 600px;" type="text"
+							name="name" placeholder="Name" maxlength="70">
 					</tr>
-
-
 					<tr>
 						<td class="col1">
-							<div style="top: 326px; left: 385px; width: 100px; height: 40px;">
+							<div style="width: 120px; height: 40px;">
 								<div data-text-content="true" class="butt">Birth</div>
 							</div>
 						</td>
@@ -111,20 +80,25 @@
 					</tr>
 					<tr>
 						<td class="col1">
-							<div style="top: 326px; left: 385px; width: 100px; height: 40px;">
+							<div style="width: 120px; height: 40px;">
 								<div data-text-content="true" class="butt">Contact</div>
 							</div>
 						</td>
-						<td class="col2"><input type="text" name="contact" placeholder="연락 가능한 전화번호" required="required"
-							maxlength="25"></td>
+						<td class="col2"><input style="width: 600px;" type="text"
+							name="contact" placeholder="연락 가능한 전화번호" maxlength="25"></td>
 					</tr>
-
+					<tr>
+					</tr>
+					<tr>
+						<td colspan="2" style="text-align: center; color: white;">
+							※ 빈칸이 없도록 작성하여야 정보를 찾을 수 있습니다.</td>
+					</tr>
 				</table>
 
 				<div class="create">
 
-					<input class="but3" type="button" value="회원가입" onclick="">
-					<input class="but4" type="button" value="회원취소"
+					<input class="but3" type="button" value="회원찾기" onclick="">
+					<input class="but4" type="button" value="취소"
 						onclick="formCheck(this.form)">
 				</div>
 			</div>
