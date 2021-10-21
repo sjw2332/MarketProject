@@ -549,7 +549,7 @@ p {
   transition: all 0.2s;
   background-color: #f82249;
   border: 0;
-  color: #404040;
+  color:white;
 }
 #buy-tickets .card .btn:hover {
   background-color: #e0072f;
@@ -569,6 +569,7 @@ p {
 #buy-tickets #buy-ticket-modal .btn:hover {
   background-color: #e0072f;
 }
+
 
 /*--------------------------------------------------------------
 # Contact Section
