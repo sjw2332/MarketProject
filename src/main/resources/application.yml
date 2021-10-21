@@ -7,7 +7,7 @@ spring:
       prefix: /WEB-INF/views/
       suffix: .jsp
 
-    static-path-pattern: /resources/** 
+    static-path-pattern: /test/resources/** 
  
   datasource:
     driver-class-name: org.mariadb.jdbc.Driver

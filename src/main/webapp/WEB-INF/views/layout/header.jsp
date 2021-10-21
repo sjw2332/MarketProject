@@ -4,61 +4,119 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Blog</title>
+<title></title>
+<meta charset="UTF-8">
+<style type="text/css">
+</style>
+<head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet"
-	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-<script
-	src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script
-	src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-<script
-	src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+<title>Test메인페이지</title>
+<meta content="" name="description">
+<meta content="" name="keywords">
+
+<!-- Favicons -->
+<link href="resources/img/favicon.png" rel="icon">
+<link href="resources/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+<!-- Google Fonts -->
 <link
-	href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css"
+	href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800"
 	rel="stylesheet">
-<script
-	src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
+
+<!-- Vendor CSS Files -->
+<link href="resources/vendor/aos/aos.css" rel="stylesheet">
+<link href="resources/vendor/bootstrap/css/bootstrap.min.css"
+	rel="stylesheet">
+<link href="resources/vendor/bootstrap-icons/bootstrap-icons.css"
+	rel="stylesheet">
+<link href="resources/vendor/glightbox/css/glightbox.min.css"
+	rel="stylesheet">
+<link href="resources/vendor/swiper/swiper-bundle.min.css"
+	rel="stylesheet">
+
+<!-- Template Main CSS File -->
+<link href="resources/css/style.css" rel="stylesheet">
+
 </head>
-
 <body>
+	<!-- ======= Header ======= -->
+	<header id="header" class="d-flex align-items-center ">
+		<div class="container-fluid container-xxl d-flex align-items-center">
 
-	<!-- 네브바 시작 -->
-	<nav class="navbar navbar-expand-md bg-dark navbar-dark">
-		<a class="navbar-brand" href="/">블로그</a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse"
-			data-target="#collapsibleNavbar">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse" id="collapsibleNavbar">
-			<ul class="navbar-nav">
+			<div id="logo" class="me-auto">
 
-				<c:choose>
-					<c:when test="${empty sessionScope.principal}">
-						<li class="nav-item"><a class="nav-link" href="/loginForm">로그인</a>
-						</li>
+				<h1>
+					<a href="/">My<span>Tube</span></a>
+				</h1>
+				<!--<a href="index.jsp" class="scrollto"><img src="resources/img/logo.png" alt="" title=""></a>-->
+			</div>
 
-						<li class="nav-item"><a class="nav-link" href="/joinForm">회원가입</a>
-						</li>
-					</c:when>
-					<c:otherwise>
-						<li class="nav-item"><a class="nav-link"
-							href="/board/saveForm">글쓰기</a></li>
+			<nav id="navbar" class="navbar order-last order  ">
+				<ul>
+					<li><a class="nav-link scrollto" href="/">계정가치평가</a></li>
+					<li><a class="nav-link scrollto" href="/">계정거래</a></li>
 
-						<li class="nav-item"><a class="nav-link"
-							href="/user/${sessionScope.principal.id}">회원정보</a></li>
+					<li><a class="nav-link scrollto" href="/test/contact">고객센터</a></li>
 
-						<li class="nav-item"><a class="nav-link" href="/logout">로그아웃</a>
-						</li>
-					</c:otherwise>
-				</c:choose>
+				</ul>
+			</nav>
 
+			<!-- user 관련 nav  -->
+			<nav id="navbar" class="navbar order-last order">
 
+				<ul>
+					<c:choose>
+						<c:when test="">
+							<li><a class="nav-link scrollto" href="#contact">Join</a></li>
+						</c:when>
+						<c:otherwise>
+							<li class="dropdown"><a href="#"><span>MyPage</span> <i
+									class="bi bi-chevron-down"></i></a>
+								<ul>
+									<li><a href="#">회원정보수정</a></li>
+									<li class="dropdown"><a><span>거래내역</span> <i class="bi bi-chevron-right"></i></a>
+										<ul>
+											<li><a href="#">판매 내역</a></li>
+											<li><a href="#">구매 내역</a></li>
 
+										</ul></li>
+										<li class="dropdown"><a><span>Cash</span> <i class="bi bi-chevron-right"></i></a>
+										<ul>
+											<li><a href="/test/cash">My Cash</a></li>
+											<li><a href="/test/pay">Cash 충전</a></li>
+										</ul></li>
+								</ul></li>
+						</c:otherwise>
+					</c:choose>
+					<!-- .navbar -->
+					<c:choose>
+						<c:when test="">
+							<a class="login-nav scrollto" href="/"
+								style="margin-left: 10px">Login</a>
+						</c:when>
+						<c:otherwise>
+							<a class="login-nav scrollto" href="/"
+								style="margin-left: 10px">Logout</a>
+						</c:otherwise>
+					</c:choose>
+				</ul>
+			</nav>
 
-			</ul>
 		</div>
-	</nav>
-	<br>
-	<!-- 네브바 끝 -->
+	</header>
+	<!-- End Header -->
+
+
+	<!-- Core theme JS-->
+	<script src="resources/js/scripts.js"></script>
+	<!-- 링크 추가 재욱 -->
+	<link href="resources/css/stylejw.css" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet"> 
+	<!-- 링크 추가 재욱끝 -->
+	<!-- 현래 css -->
+	<link href="resources/css/user.css" rel="stylesheet"/>
+	
+</body>
+</html>

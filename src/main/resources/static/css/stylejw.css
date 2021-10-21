@@ -43,6 +43,9 @@ position: relative; left:10px;
  	text-align: center;
  }
  
+.card-body{
+     color: #000000;
+}
 
 
 .pcard {
@@ -50,7 +53,7 @@ position: relative; left:10px;
     background-color: #efefef;
     border: none;
     cursor: pointer;
-    transition: all 0.5s
+    transition: all 0.5s;
 }
 .image img {
     transition: all 0.5s
@@ -96,7 +99,7 @@ position: relative; left:10px;
 }
 
 .container .item:nth-child(1) {
-	border-right: 1px solid black;
+	border-right: 1px solid #ffffff;
 	
 }
 
@@ -109,6 +112,10 @@ position: relative; left:10px;
 
 .intro {
 	padding-left:50px;
+}
+
+h5 i {
+	color:red;
 }
 
 
