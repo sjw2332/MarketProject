@@ -3,7 +3,6 @@
 
 <%@ include file="../layout/header.jsp"%>
 
-<link href="/resources/css/user.css" rel="stylesheet"/>
 <style>
 </style>
 <body class="bgcolor">

@@ -108,10 +108,15 @@
 	</header>
 	<!-- End Header -->
 
-	<!-- Bootstrap core JS-->
-	<script
-		src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+
 	<!-- Core theme JS-->
-	<script src="js/scripts.js"></script>
+	<script src="resources/js/scripts.js"></script>
+	<!-- 링크 추가 재욱 -->
+	<link href="resources/css/stylejw.css" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet"> 
+	<!-- 링크 추가 재욱끝 -->
+	<!-- 현래 css -->
+	<link href="resources/css/user.css" rel="stylesheet"/>
+	
 </body>
 </html>

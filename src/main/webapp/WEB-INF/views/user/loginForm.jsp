@@ -3,12 +3,11 @@
 
 <%@ include file="../layout/header.jsp"%>
 
-<link href="/resources/css/user.css" rel="stylesheet" />
-<style>
-</style>
+<!-- <link href="/resources/css/user.css" rel="stylesheet" /> -->
+
 <body class="bgcolor">
 	<form method="post" action="">
-		<div class="container">
+		<div class="container login">
 			<div class="insert">
 				<div class="login_id">
 					<br>
@@ -30,8 +29,7 @@
 			</div>
 		</div>
 	</form>
-</body>
-</html>
+
 
 
 <%@ include file="../layout/footer.jsp"%>

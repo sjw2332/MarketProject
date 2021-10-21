@@ -76,13 +76,13 @@
            <!-- The slideshow -->
            <div class="carousel-inner">
              <div class="carousel-item active">
-               <img src="../img/la.jpg" alt="Los Angeles">
+               <img src="resources/img/la.jpg" alt="Los Angeles">
              </div>
              <div class="carousel-item">
-               <img src="../img/chicago.jpg" alt="Chicago">
+               <img src="resources/img/chicago.jpg" alt="Chicago">
              </div>
              <div class="carousel-item">
-               <img src="../img/ny.jpg" alt="New York">
+               <img src="resources/img/ny.jpg" alt="New York">
              </div>
            </div>
            

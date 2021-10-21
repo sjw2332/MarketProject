@@ -13,13 +13,13 @@ public class TestController {
 	public String 목록() {
 		return "board/list";
 	}
-	@GetMapping("/test/writeForm")
+	@GetMapping("/test/writeform")
 	public String 게시글작성() {
 		return "board/writeForm";
 	}
 	
    // 지희 추가
-   @GetMapping("/test/updateForm")
+   @GetMapping("/test/updateform")
    public String 게시글수정() {
       return "board/updateForm";
    }
@@ -60,4 +60,53 @@ public class TestController {
 	public String 로그인() {
 		return "user/loginForm";
 	}
+
+	
+	@GetMapping("/test/login2")
+	public String 로그인2() {
+		return "user/logintest";
+	}
+
+	
+	
+	@GetMapping("/test/userfindform")
+	public String find() {
+		return "user/userfindForm";
+	}
+	
+	
+	
+	
+	
+	
+	@GetMapping("/test/eva")
+	public String youtubeEva() {
+		return "youtube/youtubeEva";
+	}
+	@GetMapping("/test/mylist")
+	public String test() {
+		return "user/myList";
+	}
+	@GetMapping("/test/buylist")
+	public String test2() {
+		return "user/buyList";
+	}
+	@GetMapping("/test/selllist")
+	public String test3() {
+		return "user/sellList";
+	}
+
+	
+	@GetMapping("/")
+	public String test4() {
+		return "indextest";
+	}
+
+	@GetMapping("/test/index")
+	public String test5() {
+		return "index";
+	}
+	
+	
+	
 }

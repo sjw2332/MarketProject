@@ -3,28 +3,28 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<!-- <head>
   <title></title>
   <meta charset="UTF-8">
 <style type="text/css"></style>
-<head>
+<head> -->
 <meta charset="utf-8">
 <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-<title>Test메인페이지</title>
+<!-- <title>Test메인페이지</title> -->
 <meta content="" name="description">
 <meta content="" name="keywords">
 
-<!-- Favicons -->
+<!-- <!-- Favicons -->
 <link href="resources/img/favicon.png" rel="icon">
 <link href="resources/img/apple-touch-icon.png" rel="apple-touch-icon">
 
 <!-- Google Fonts -->
-<link
+<!-- <link
 	href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800"
 	rel="stylesheet">
 
-<!-- Vendor CSS Files -->
+Vendor CSS Files
 <link href="resources/vendor/aos/aos.css" rel="stylesheet">
 <link href="resources/vendor/bootstrap/css/bootstrap.min.css"
 	rel="stylesheet">
@@ -35,18 +35,18 @@
 <link href="resources/vendor/swiper/swiper-bundle.min.css"
 	rel="stylesheet">
 
-<!-- Template Main CSS File -->
-<link href="resources/css/style.css" rel="stylesheet">
+Template Main CSS File
+<link href="resources/css/style.css" rel="stylesheet"> -->
 
-</head>
+<!-- </head> -->
 <body>
 	<!-- ======= Footer ======= -->
 	<footer id="footer">
 		<div class="footer-top">
-			<div class="container">
-				<div class="row">
+			<div class="container" style="padding:10px">
+				<div class="row" style="margin-top:50px">
 
-					<div class="col-lg-3 col-md-6 footer-info">
+					<div class="col-lg-3 col-md-6 footer-info" style="margin-top:50px">
 						<h1>My<span>Tube</span></h1>
 					<!-- <img src="resources/img/logo.png" alt=""> -->	
 						
@@ -98,7 +98,7 @@
 	<!-- Bootstrap core JS-->
 	<script
 		src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
-	<!-- Core theme JS-->
-	<script src="js/scripts.js"></script>
+<!-- 	<!-- Core theme JS-->
+	<script src="resources/js/scripts.js"></script>
 </body>
 </html>

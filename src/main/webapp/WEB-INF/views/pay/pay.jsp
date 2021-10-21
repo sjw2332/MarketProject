@@ -18,18 +18,18 @@
 	rel="stylesheet">
 
 <!-- Vendor CSS Files -->
-<link href="../resources/vendor/aos/aos.css" rel="stylesheet">
-<link href="../resources/vendor/bootstrap/css/bootstrap.min.css"
+<link href="resources/vendor/aos/aos.css" rel="stylesheet">
+<link href="resources/vendor/bootstrap/css/bootstrap.min.css"
 	rel="stylesheet">
-<link href="../resources/vendor/bootstrap-icons/bootstrap-icons.css"
+<link href="resources/vendor/bootstrap-icons/bootstrap-icons.css"
 	rel="stylesheet">
-<link href="../resources/vendor/glightbox/css/glightbox.min.css"
+<link href="resources/vendor/glightbox/css/glightbox.min.css"
 	rel="stylesheet">
-<link href="../resources/vendor/swiper/swiper-bundle.min.css"
+<link href="resources/vendor/swiper/swiper-bundle.min.css"
 	rel="stylesheet">
 
 <!-- Template Main CSS File -->
-<link href="../resources/css/style.css" rel="stylesheet">
+<link href="resources/css/style.css" rel="stylesheet">
 </head>
 <body>
 	<!-- ======= main Section ======= -->
@@ -91,11 +91,11 @@
 		class="back-to-top d-flex align-items-center justify-content-center"><i
 		class="bi bi-arrow-up-short"></i></a>
 	<!-- Vendor JS Files -->
-	<script src="../resources/vendor/aos/aos.js"></script>
-	<script src="../resources/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-	<script src="../resources/vendor/glightbox/js/glightbox.min.js"></script>
-	<script src="../resources/vendor/php-email-form/validate.js"></script>
-	<script src="../resources/vendor/swiper/swiper-bundle.min.js"></script>
+	<script src="resources/vendor/aos/aos.js"></script>
+	<script src="resources/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<script src="resources/vendor/glightbox/js/glightbox.min.js"></script>
+	<script src="resources/vendor/php-email-form/validate.js"></script>
+	<script src="resources/vendor/swiper/swiper-bundle.min.js"></script>
 
 	<!-- Template Main JS File -->
 	<script src="../resources/js/main.js"></script>
