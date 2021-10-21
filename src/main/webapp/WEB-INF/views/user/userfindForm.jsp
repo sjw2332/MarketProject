@@ -15,16 +15,16 @@
 				<table>
 					<tr>
 						<td class="col1">
-							<div style="width: 120px; height: 40px;">
+							<div style="width: 90%; height: 40px;">
 								<div data-text-content="true" class="butt">Name</div>
 							</div>
 						</td>
-						<td class="col2"><input style="width: 600px;" type="text"
+						<td class="col2"><input style="width: 90%;" type="text"
 							name="name" placeholder="Name" maxlength="70">
 					</tr>
 					<tr>
 						<td class="col1">
-							<div style="width: 120px; height: 40px;">
+							<div style="width: 90%; height: 40px;">
 								<div data-text-content="true" class="butt">Birth</div>
 							</div>
 						</td>
@@ -80,11 +80,11 @@
 					</tr>
 					<tr>
 						<td class="col1">
-							<div style="width: 120px; height: 40px;">
+							<div style="width: 90%; height: 40px;">
 								<div data-text-content="true" class="butt">Contact</div>
 							</div>
 						</td>
-						<td class="col2"><input style="width: 600px;" type="text"
+						<td class="col2"><input style="width: 90%;" type="text"
 							name="contact" placeholder="연락 가능한 전화번호" maxlength="25"></td>
 					</tr>
 					<tr>

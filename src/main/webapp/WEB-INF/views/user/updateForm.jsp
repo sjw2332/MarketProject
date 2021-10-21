@@ -4,7 +4,8 @@
 <%@ include file="../layout/header.jsp"%>
 
 <link href="/resources/css/user.css" rel="stylesheet"/>
-<style>
+<style type="text/css">
+tr {width: 100%;}
 </style>
 <body class="bgcolor">
 	<form method="post" action="">
@@ -14,20 +15,20 @@
 				<table>
 					<tr>
 						<td class="col1">
-							<div style="width: 120px; height: 40px;">
-								<div data-text-content="true" class="butt">New Password</div>
+							<div style="width: 90%; height: 40px;">
+								<div data-text-content="true" class="butt">New PW</div>
 							</div>
 						</td>
-						<td class="col2"><input style="width: 600px;" type="password"
+						<td class="col2"><input style="width: 90%;" type="password"
 							name="password" placeholder="새로운 비밀번호를 입력하세요" maxlength="70">
 					</tr>
 					<tr>
 						<td class="col1">
-							<div style="width: 120px; height: 40px;">
+							<div style="width: 90%; height: 40px;">
 								<div data-text-content="true" class="butt">Contact</div>
 							</div>
 						</td>
-						<td class="col2"><input style="width: 600px;" type="text"
+						<td class="col2"><input style="width: 90%;" type="text"
 							name="contact" placeholder="연락가능한 전화번호" maxlength="25"></td>
 					</tr>
 					<tr>

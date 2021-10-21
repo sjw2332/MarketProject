@@ -13,12 +13,12 @@
 				<table>
 					<tr>
 						<td class="col1">
-							<div style="top: 326px; left: 385px; width: 100px; height: 40px;">
+							<div style="width: 90%; height: 40px;">
 								<div data-text-content="true" class="butt">E-Mail</div>
 							</div>
 						</td>
-						<td class="col2"><input type="text" name="username" placeholder="메일주소를 입력해주세요" required="required">
-							<span class="a">@</span> <input type="text" name="email" placeholder="직접입력하시거나 선택해주세요" required="required">
+						<td class="col2"><input style="width: 30%; height: 40px;" type="text" name="username" placeholder="메일주소를 입력해주세요" required="required">
+							<span class="a">@</span> <input style="width: 30%; height: 40px;" type="text" name="email" placeholder="직접입력하시거나 선택해주세요" required="required">
 							<select name="email">
 								<option value="self" selected>직접입력</option>
 								<option value="naver">naver.com</option>
@@ -30,11 +30,11 @@
 
 					<tr>
 						<td class="col1">
-							<div style="top: 326px; left: 385px; width: 100px; height: 40px;">
+							<div style="width: 90%; height: 40px;">
 								<div data-text-content="true" class="butt">Password</div>
 							</div>
 						</td>
-						<td class="col2"><input type="password" name="password" placeholder="Password"
+						<td class="col2"><input style="width: 90%; height: 40px;" type="password" name="password" placeholder="Password"
 							maxlength="70" required="required">
 							<p>
 								<span class="text">※ 비밀번호는</span>
@@ -44,18 +44,18 @@
 					</tr>
 					<tr>
 						<td class="col1">
-							<div style="top: 326px; left: 385px; width: 100px; height: 40px;">
+							<div style="width: 90%; height: 40px;">
 								<div data-text-content="true" class="butt">Name</div>
 							</div>
 						</td>
-						<td class="col2"><input type="text" name="name" placeholder="Name" required="required"
+						<td class="col2"><input style="width: 90%; height: 40px;" type="text" name="name" placeholder="Name" required="required"
 							maxlength="70"></td>
 					</tr>
 
 
 					<tr>
 						<td class="col1">
-							<div style="top: 326px; left: 385px; width: 100px; height: 40px;">
+							<div style="width: 90%; height: 40px;">
 								<div data-text-content="true" class="butt">Birth</div>
 							</div>
 						</td>
@@ -111,11 +111,11 @@
 					</tr>
 					<tr>
 						<td class="col1">
-							<div style="top: 326px; left: 385px; width: 100px; height: 40px;">
+							<div style="width: 90%; height: 40px;">
 								<div data-text-content="true" class="butt">Contact</div>
 							</div>
 						</td>
-						<td class="col2"><input type="text" name="contact" placeholder="연락 가능한 전화번호" required="required"
+						<td class="col2"><input style="width: 90%; height: 40px;" type="text" name="contact" placeholder="연락 가능한 전화번호" required="required"
 							maxlength="25"></td>
 					</tr>
 
