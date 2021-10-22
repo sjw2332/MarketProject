@@ -10,17 +10,6 @@
 		<div class="container login">
 			<div class="insert">
 				<div class="login_id">
-					<br>
-					<h4>E-mail</h4>
-					<input type="text" name="username" placeholder="Email">
-				</div>
-				<br>
-				<div class="login_pw">
-					<h4>Password</h4>
-					<input type="password" name="password" placeholder="Password">
-				</div>
-				<br>
-				<div class="login_id">
 					<h4>Name</h4>
 					<input type="text" name="name" placeholder="Name">
 				</div>
@@ -87,9 +76,14 @@
 					<input type="text" name="contact" placeholder="통화가능한 연락처를 기재하세요">
 				</div>
 				<br>
+				<div style="text-align: center; color: white;">
+					※ 빈칸이 없도록 작성하여야 정보를 찾을 수 있습니다.
+				</div>
+				<br>
 				<div class="create">
-					<input class="but3" type="button" value="회원가입" onclick="">
-					<input class="but4" type="button" value="회원취소"
+
+					<input class="but3" type="button" value="회원찾기" onclick="">
+					<input class="but4" type="button" value="취소"
 						onclick="formCheck(this.form)">
 				</div>
 			</div>
