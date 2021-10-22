@@ -1,77 +1,81 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-    
 <%@ include file="../layout/header.jsp"%>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link href="resources/css/board.css" rel="stylesheet" />
+<body class="bgdcolor">
 
-<div class="container" style="margin-top:30px;">
-   <h2>거래 등록</h2>
+<div class="container" style="width:600px;">
+	<form method="post" action="#" onsubmit="myFunction()">
+		<div class="row">
+	    		<h2>판매물품 등록하기</h2>
+		</div>
+	    <div class="row">
+	         		<div class="text_left" >
+					<br>
+		            	<label for="sell-title">제목:</label>
+		                <input type="text" class="form-control" id="sell-title" placeholder="제목을 입력하세요">
+	              	</div>
+	    </div>
+	    <div class="row">
+					<div class="form-group">
+						<label class="text_left pad-t10" for="category">카테고리:</label>
+							<select class="custom-select">
+			                    <option selected>선택</option>
+			                    <option value="trip">여행</option>
+			                    <option value="movie">영화</option>
+			                    <option value="cook">요리</option>
+	                    	</select>
+					</div>
+		</div>	        	
+	    <div class="row">	              	
+	                <div class="text_left">
+					    <label for="price" >금액:</label>
+					    <div class="input-group mb-3">
+						  <div class="input-group-prepend">
+						    <span class="input-group-text">$</span>
+						  </div>
+						  <input type="text" class="form-control"  style = "text-align:right;" placeholder="단위: 만 원 ">
+						  <div class="input-group-append">
+						    <span class="input-group-text">만 원</span>
+						  </div>
+						</div>
+					</div>
+		</div>
+		<div class="row">
+	            	<div class="text_left">
+	                  <label for="content" >상세 글 적기:</label>
+	                  <textarea class="form-control" id="content" rows="5"></textarea>
+	                </div>
+		</div>
+		<div class="row">	                
+		        	<div class="text_left pad-t10">
+		            	<label for="link" >MyTube 가치평가 연동주소:</label>
+		                <input type="text" class="form-control" placeholder="주소를 입력하세요">
+		            </div>
+		</div>
+		<div class="row">	            
+	            	<div class="text_left pad-t10">
+	                	<label for="formFile" class="form-label">이미지 첨부:</label>
+	                	<input class="form-control" type="file"  multiple="multiple" id="formFile" onchange="setDetailImage(event);">
+	                	<br>
+	                </div>
+		</div>
+		<div class="row">
+		        	<div class="text-center">
+		            	<button type="submit" class="btn btn-primary width100">완료</button>
+		                <button type="button" class="btn btn-danger width100 marg-l30" onclick="location.href='list' ">취소</button>
+		            </div>
+		        </div>
+	</form>
+</div>
 
-   <div  style="margin-top:30px; margin-left:80px;">
-     <form action="/test/list"  method="post">
-      <table height=500px>
-         <tr>
-           <td colspan="2">
-              <div class="form-inline" >
-                 <label for="category" style="margin-right:47px;">제목:</label>
-                 <input type="text" class="form-control" style="width:880px;" placeholder="제목을 입력하세요">
-              </div>
-             </td>
-           </tr>
-           <tr>
-              <td colspan="2">
-                 <div style="margin:auto; text-align:left; margin-top:20px">
-                   <label for="category" style="margin-right:10px;">카테고리:</label>
-                   <select name="select-category" class="custom-select" style="width:200px; margin-right:230px;">
-                     <option selected>선택</option>
-                     <option value="volvo">영화</option>
-                     <option value="fiat">Vlog</option>
-                     <option value="audi">요리</option>
-                   </select>
-                </div>
-             </td>
-         </tr>
-         <tr>
-              <td colspan="2">
-                <div class="form-inline"  style="margin-top:20px;">
-                <label for="price"  style="margin-right:47px;">금액:</label>
-                <input type="text" class="form-control" style="width:200px; text-align:right; margin-right:10px;" placeholder="금액 입력">
-                <label for="unit">만원</label>
-               </div>
-             </td>
-           </tr>
-         <tr>
-              <td colspan="2">
-                 <div class="form-group" style="width:965px; margin-top:15px;">
-                  <label for="content" >상세 글 적기:</label>
-                  <textarea class="form-control" id="content" rows="5"></textarea>
-               </td>
-          </tr>
-         <tr>
-            <td width=20%>
-                <label for="link" >MyTube 가치평가 연동주소:</label>
-             </td>
-             <td width=80%>
-                <input type="text" class="form-control" style="width:764px" placeholder="주소를 입력하세요">
-             </td>
-          </tr>
-          <tr>
-             <td colspan="2">
-                <div class="form-group">
-                  <label for="formFile" class="form-label mt-4">이미지 첨부:</label>
-                  <input class="form-control" type="file"  multiple="multiple" id="formFile" onchange="setDetailImage(event);"style="width:967px;">
-                </div>
-             </td>
-          </tr>          
-          <tr>
-             <td colspan="2" style="text-align:center;">
-                <button type="submit" class="btn btn-primary" style="width:100px;">등록</button>
-                <button type="button" class="btn btn-danger" style="width:100px; margin-left:50px;">취소</button>
-             </td>
-          </tr>
-          </table>
-      </form>
-     </div>
-   </div>
+<script>
+	function myFunction() {
+	  alert("등록완료 되었습니다");
+	}
+</script>
 
 </body>
 </html>
+<%@ include file="../layout/footer.jsp"%>
