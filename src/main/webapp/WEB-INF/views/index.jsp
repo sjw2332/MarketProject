@@ -11,16 +11,41 @@
 <title>Test메인페이지</title>
 <meta content="" name="description">
 <meta content="" name="keywords">
+<style type="text/css">
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+  background: #2c2c2c;
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+}
 
-<!-- Favicons -->
+a {
+  color: #f82249;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+a:hover, a:active, a:focus {
+  color: #f82249;
+  outline: none;
+  text-decoration: none;
+}
+
+p {
+  padding: 0;
+  margin: 0 0 30px 0;
+}
+</style>
 
 <!-- Google Fonts -->
 <link
 	href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800"
 	rel="stylesheet">
 
-<!-- Vendor CSS Files -->
-<link href="resources/vendor/aos/aos.css" rel="stylesheet">
+<!-- Vendor CSS Files 
+<!-- <link href="resources/vendor/aos/aos.css" rel="stylesheet">
 <link href="resources/vendor/bootstrap/css/bootstrap.min.css"
 	rel="stylesheet">
 <link href="resources/vendor/bootstrap-icons/bootstrap-icons.css"
@@ -28,7 +53,7 @@
 <link href="resources/vendor/glightbox/css/glightbox.min.css"
 	rel="stylesheet">
 <link href="resources/vendor/swiper/swiper-bundle.min.css"
-	rel="stylesheet">
+	rel="stylesheet">-->
 
 <!-- Template Main CSS File -->
 <link href="resources/css/style.css" rel="stylesheet">

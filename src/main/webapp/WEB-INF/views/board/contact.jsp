@@ -4,7 +4,15 @@
 <%@ include file="../layout/header.jsp"%>
 <head>
 <style type="text/css">
+ h1, h2, h3, h4, h5, h6 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  margin: 0 0 20px 0;
+  padding: 0;
+  color: #f82249;
+} 
 </style>
+
 <title>Testcontact</title>
 
 <head>
@@ -19,7 +27,6 @@
    rel="stylesheet">
 
 <!-- Vendor CSS Files -->
-<link href="../resources/vendor/aos/aos.css" rel="stylesheet">
 <link href="../resources/vendor/bootstrap/css/bootstrap.min.css"
    rel="stylesheet">
 <link href="../resources/vendor/bootstrap-icons/bootstrap-icons.css"
@@ -80,9 +87,9 @@
             </div>
 
          </div>
-
+		<hr>
          <div class="form">
-            <form action="forms/contact.php" method="post" role="form"
+            <form action="../resource/vendor/php-email-form/contact.php" method="post" role="form"
                class="php-email-form">
                <div class="row">
                   <div class="form-group col-md-6">
@@ -108,10 +115,12 @@
                   <div class="sent-message">Your message has been sent. Thank
                      you!</div>
                </div>
+               <hr>
                <div class="text-center">
                   <button type="submit">Send Message</button>
                </div>
             </form>
+
          </div>
 
       </div>
@@ -122,11 +131,13 @@
    </section>
    <!-- End main Section -->
    
-	<%@include file="../layout/footer.jsp"%>
    
    <a href="#"
       class="back-to-top d-flex align-items-center justify-content-center"><i
       class="bi bi-arrow-up-short"></i></a>
+      
+	<%@include file="../layout/footer.jsp"%>
+      
    <!-- Vendor JS Files -->
    <script src="../resources/vendor/aos/aos.js"></script>
    <script src="../resources/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

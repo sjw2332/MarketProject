@@ -4,7 +4,6 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
-
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -31,6 +30,7 @@ p {
   margin: 0 0 30px 0;
 }
 
+
 /* h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
@@ -43,7 +43,7 @@ p {
   margin-top: 70px;
 }
 
-/* Prelaoder */
+/* Prelaoder 
 #preloader {
   position: fixed;
   left: 0;
@@ -53,7 +53,7 @@ p {
   height: 100%;
   overflow: visible;
   background: #fff url("../img/preloader.svg") no-repeat center center;
-}
+}*/
 
 /*--------------------------------------------------------------
 # Back to top button
@@ -131,8 +131,7 @@ p {
   left: 0;
   top: 0;
   right: 0;
-  transition: all 0.5s;
-  z-index: 997;
+
 }
 #header.header-scrolled, #header.header-inner {
   background: rgb(44, 44, 44);
@@ -140,7 +139,7 @@ p {
 }
 #header #logo h1 {
   font-size: 36px;
-  margin: 0;
+  margin-left: 0px;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   letter-spacing: 3px;
@@ -171,7 +170,7 @@ p {
   color: #fff;
   background: #f82249;
   padding: 7px 22px;
-  margin: 0 0 0 15px;
+  margin: 0 0 0 0px;
   border-radius: 50px;
   border: 2px solid #f82249;
   transition: all ease-in-out 0.3s;
@@ -179,6 +178,7 @@ p {
   line-height: 1;
   font-size: 13px;
   white-space: nowrap;
+  
 }
 .login-nav:hover {
   background: none;
@@ -200,7 +200,8 @@ p {
 * Desktop Navigation 
 */
 .navbar {
-  padding: 200px;
+  height: 90px; 
+  align-items: center;
 
 }
 .navbar ul {
@@ -507,34 +508,42 @@ p {
 # Buy Tickets Section
 --------------------------------------------------------------*/
 #buy-tickets {
-  padding: 100px 20px;
-   background-color: #2c2c2c;
-     width: 80%;
-     height: 100%;
+  padding: 60px;
+  background: #2c2c2c;
+  width: 100%;
+  height: 200%;
 
 }
 #buy-tickets .card {
   border: 0;
   border-radius: 5px;
   transition: all 0.3s ease-in-out;
-  box-shadow: 0 10px 25px 0 rgba(6, 12, 34, 0.1);
+  background: #ffffff;
+   box-shadow: 0 10px 10px 0 #ff8080;
+   
+  
 
 }
 #buy-tickets .card:hover {
-  box-shadow: 0 10px 35px 0 rgba(6, 12, 34, 0.2);
+  box-shadow: 0 10px 10px 0 #808080;
 }
 #buy-tickets .card hr {
   margin: 25px 0;
+  
 }
 #buy-tickets .card .card-title {
   margin: 20px 0;
   font-size: 30px;
   letter-spacing: 1px;
   font-weight: bold;
+    color: #000000;
+  
 }
 #buy-tickets .card .card-price {
   font-size: 48px;
   margin: 0;
+  color: #f82249;
+  
 }
 #buy-tickets .card ul li {
   margin-bottom: 20px;
@@ -552,7 +561,7 @@ p {
   color:white;
 }
 #buy-tickets .card .btn:hover {
-  background-color: #e0072f;
+  background-color: #f82249;
 }
 #buy-tickets #buy-ticket-modal input, #buy-tickets #buy-ticket-modal select {
   border-radius: 0;
@@ -576,6 +585,7 @@ p {
 --------------------------------------------------------------*/
 #contact {
   padding: 60px 0;
+  width: 100%;
 }
 #contact .contact-info {
   margin-bottom: 20px;
