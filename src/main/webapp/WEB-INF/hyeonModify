@@ -1,0 +1,6 @@
+user 파트 변경점
+1. joinForm, updateForm, userFindForm 양식이 변경되었습니다.
+2. userFindForm 이름을 findForm -> FindForm으로 변경하였습니다.
+3. 기존 자료의 경우 뒤에 2를 붙여놓았습니다.
+4. TestController는 별도로 건들지 않았습니다.
+5. webapp 경로에 있는 resources -> user.css 경로를 삭제하였습니다.
