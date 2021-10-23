@@ -7,26 +7,24 @@
 <title></title>
 <meta charset="UTF-8">
 <style type="text/css">
+
 </style>
+
 <head>
-<meta charset="utf-8">
 <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
 <title>Test메인페이지</title>
 <meta content="" name="description">
 <meta content="" name="keywords">
 
-<!-- Favicons -->
-<link href="resources/img/favicon.png" rel="icon">
-<link href="resources/img/apple-touch-icon.png" rel="apple-touch-icon">
 
 <!-- Google Fonts -->
 <link
 	href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800"
 	rel="stylesheet">
 
-<!-- Vendor CSS Files -->
-<link href="resources/vendor/aos/aos.css" rel="stylesheet">
+<!-- Vendor CSS Files  -->
+<!--<link href="resources/vendor/aos/aos.css" rel="stylesheet">-->
 <link href="resources/vendor/bootstrap/css/bootstrap.min.css"
 	rel="stylesheet">
 <link href="resources/vendor/bootstrap-icons/bootstrap-icons.css"
@@ -43,7 +41,7 @@
 <body>
 	<!-- ======= Header ======= -->
 	<header id="header" class="d-flex align-items-center ">
-		<div class="container-fluid container-xxl d-flex align-items-center">
+		<div class="container-xxl d-flex align-items-center" >
 
 			<div id="logo" class="me-auto">
 
@@ -55,31 +53,30 @@
 
 			<nav id="navbar" class="navbar order-last order  ">
 				<ul>
-					<li><a class="nav-link scrollto" href="/">계정가치평가</a></li>
-					<li><a class="nav-link scrollto" href="/">계정거래</a></li>
-
+					<li><a class="nav-link scrollto" href="/test/list">계정거래</a></li>
+					<li><a class="nav-link scrollto" href="/test/eva">계정가치평가</a></li>
 					<li><a class="nav-link scrollto" href="/test/contact">고객센터</a></li>
 
 				</ul>
 			</nav>
 
 			<!-- user 관련 nav  -->
-			<nav id="navbar" class="navbar order-last order">
+			<nav id="login_nav" class="navbar order-last order ">
 
 				<ul>
 					<c:choose>
 						<c:when test="">
-							<li><a class="nav-link scrollto" href="#contact">Join</a></li>
+							<li><a class="nav-link scrollto" href="/test/join">Join</a></li>
 						</c:when>
 						<c:otherwise>
-							<li class="dropdown"><a href="#"><span>MyPage</span> <i
+							<li class="dropdown"><a href="/test/mylist"><span>MyPage</span> <i
 									class="bi bi-chevron-down"></i></a>
 								<ul>
-									<li><a href="#">회원정보수정</a></li>
+									<li><a href="/test/update">회원정보수정</a></li>
 									<li class="dropdown"><a><span>거래내역</span> <i class="bi bi-chevron-right"></i></a>
 										<ul>
-											<li><a href="#">판매 내역</a></li>
-											<li><a href="#">구매 내역</a></li>
+											<li><a href="/test/selllist">판매 내역</a></li>
+											<li><a href="/test/buylist">구매 내역</a></li>
 
 										</ul></li>
 										<li class="dropdown"><a><span>Cash</span> <i class="bi bi-chevron-right"></i></a>
@@ -92,12 +89,12 @@
 					</c:choose>
 					<!-- .navbar -->
 					<c:choose>
-						<c:when test="">
-							<a class="login-nav scrollto" href="/"
+						<c:when test="#">
+							<a class="login-nav scrollto" href="/test/loginForm"
 								style="margin-left: 10px">Login</a>
 						</c:when>
 						<c:otherwise>
-							<a class="login-nav scrollto" href="/"
+							<a class="login-nav scrollto" href="/test/loginForm"
 								style="margin-left: 10px">Logout</a>
 						</c:otherwise>
 					</c:choose>
@@ -116,12 +113,14 @@
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet"> 
 	<!-- 링크 추가 재욱끝 -->
 	<!-- 현래 css -->
+
 	<link href="resources/css/user.css" rel="stylesheet"/>
 	<!-- 링크 추가 지희 -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   	<!-- 링크 추가 지희끝 -->
+
 
 </body>
 </html>

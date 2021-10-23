@@ -4,6 +4,13 @@
 <%@ include file="../layout/header.jsp"%>
 <head>
 <style type="text/css">
+ h1, h2, h3, h4, h5, h6 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  margin: 0 0 20px 0;
+  padding: 0;
+  color: #f82249;
+}
 </style>
 <title>Testcontact</title>
 <head>
@@ -45,25 +52,26 @@
 						<p></p>
 					</div>
 				</div>
-				<div class="row">
+				<div class="container">
 					<div data-aos="fade-up" data-aos-delay="100">
 						<div class="card mb-5 mb-lg-0">
 							<div class="card-body">
-								<h5 class="card-title text-muted text-uppercase text-center">보유
+								<h5 class="card-title text-uppercase text-center">보유
 									Cash</h5>
-								<h6 class="card-price text-center">$150</h6>
+								<h6 class="card-price text-center">50000</h6>
 								<hr>
 
 								<hr>
 								<div class="text-center">
 									<button type="button" class="btn" data-bs-toggle="modal"
-										data-ticket-type="standard-access">CASH 충전</button>
+										data-ticket-type="standard-access">충전</button>
 								</div>
 								<hr>
-								<div class="text-center">
+								<div class="text-center" >
 									<button type="button" class="btn" data-bs-toggle="modal"
-										data-ticket-type="standard-access">CASH 출금</button>
+										data-ticket-type="standard-access" style="background:blue">출금</button>
 								</div>
+								<hr>
 								<hr>
 							</div>
 						</div>
@@ -71,9 +79,8 @@
 
 
 				</div>
-
-
-				<!-- Modal Order Form -->
+ 
+				<!-- Modal Order Form 
 				<div id="buy-ticket-modal" class="modal fade">
 					<div class="modal-dialog" role="document">
 						<div class="modal-content">
@@ -107,12 +114,12 @@
 								</form>
 							</div>
 						</div>
-						<!-- /.modal-content -->
+						<!-- /.modal-content 
 					</div>
-					<!-- /.modal-dialog -->
+					<!-- /.modal-dialog 
 				</div>
 				<!-- /.modal -->
-
+				
 			</section>
 			<!-- End Buy Ticket Section -->
 		</div>

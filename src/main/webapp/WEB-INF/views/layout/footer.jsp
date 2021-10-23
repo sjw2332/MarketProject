@@ -3,11 +3,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html lang="en">
-<!-- <head>
-  <title></title>
-  <meta charset="UTF-8">
-<style type="text/css"></style>
-<head> -->
+
 <meta charset="utf-8">
 <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
@@ -15,30 +11,6 @@
 <meta content="" name="description">
 <meta content="" name="keywords">
 
-<!-- <!-- Favicons -->
-<link href="resources/img/favicon.png" rel="icon">
-<link href="resources/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-<!-- Google Fonts -->
-<!-- <link
-	href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800"
-	rel="stylesheet">
-
-Vendor CSS Files
-<link href="resources/vendor/aos/aos.css" rel="stylesheet">
-<link href="resources/vendor/bootstrap/css/bootstrap.min.css"
-	rel="stylesheet">
-<link href="resources/vendor/bootstrap-icons/bootstrap-icons.css"
-	rel="stylesheet">
-<link href="resources/vendor/glightbox/css/glightbox.min.css"
-	rel="stylesheet">
-<link href="resources/vendor/swiper/swiper-bundle.min.css"
-	rel="stylesheet">
-
-Template Main CSS File
-<link href="resources/css/style.css" rel="stylesheet"> -->
-
-<!-- </head> -->
 <body>
 	<!-- ======= Footer ======= -->
 	<footer id="footer">
@@ -48,8 +20,7 @@ Template Main CSS File
 
 					<div class="col-lg-3 col-md-6 footer-info" style="margin-top:50px">
 						<h1>My<span>Tube</span></h1>
-					<!-- <img src="resources/img/logo.png" alt=""> -->	
-						
+					
 						<p>성재욱 박정인 예지희 조현래</p>
 
 					</div>
@@ -57,9 +28,9 @@ Template Main CSS File
 					<div class="col-lg-3 col-md-6 footer-links">
 						<h4>Useful Links</h4>
 						<ul>
-							<li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
-							<li><i class="bi bi-chevron-right"></i> <a href="#">가치평가</a></li>
-							<li><i class="bi bi-chevron-right"></i> <a href="#">계정거래</a></li>
+							<li><i class="bi bi-chevron-right"></i> <a href="/">Home</a></li>
+							<li><i class="bi bi-chevron-right"></i> <a href="/test/eva">가치평가</a></li>
+							<li><i class="bi bi-chevron-right"></i> <a href="/test/list">계정거래</a></li>
 
 						</ul>
 					</div>
@@ -67,8 +38,8 @@ Template Main CSS File
 					<div class="col-lg-3 col-md-6 footer-links">
 						<h4>Useful Links</h4>
 						<ul>
-							<li><i class="bi bi-chevron-right"></i> <a href="#">마이페이지</a></li>
-							<li><i class="bi bi-chevron-right"></i> <a href="#">contact</a></li>
+							<li><i class="bi bi-chevron-right"></i> <a href="/test/myList">마이페이지</a></li>
+							<li><i class="bi bi-chevron-right"></i> <a href="/test/contact">contact</a></li>
 						</ul>
 					</div>
 
@@ -98,7 +69,7 @@ Template Main CSS File
 	<!-- Bootstrap core JS-->
 	<script
 		src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
-<!-- 	<!-- Core theme JS-->
-	<script src="resources/js/scripts.js"></script>
+	<!-- Core theme JS-->
+	<script src="resources/js/scripts.js"></script> 
 </body>
 </html>
