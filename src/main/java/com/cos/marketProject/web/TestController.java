@@ -23,7 +23,7 @@ public class TestController {
    public String 게시글수정() {
       return "board/updateForm";
    }
-	
+
 	//------------------------------
    //정인 추가-------------------
 	@GetMapping("/test/cash")
