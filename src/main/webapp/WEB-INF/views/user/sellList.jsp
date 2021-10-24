@@ -1,7 +1,11 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ include file="../layout/header.jsp" %>
-<div class="container">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+ <link href="resources/css/board.css" rel="stylesheet" />
+
+<body class="bgdcolor">
+<div class="container margin-top-100">
     <div class="row">
         <div class="col-md-4 col-xl-3">
             <div class="lcard bg-c-pink order-card">
@@ -66,3 +70,4 @@
 
 </body>
 </html>
+<%@ include file="../layout/footer.jsp" %>

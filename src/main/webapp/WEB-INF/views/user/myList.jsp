@@ -1,9 +1,14 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ include file="../layout/header.jsp" %>
-<div class="container">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link href="resources/css/board.css" rel="stylesheet" />
+
+<body class="bgdcolor">
+<div class="container margin-top-50">
     <div class="row">
-        <div class="col-md-4 col-xl-3">
+        
+        <div class="col-sm">
             <div class="lcard bg-c-blue order-card">
                 <div class="card-block">
                     <h6 class="m-b-20">판매중</h6>
@@ -12,7 +17,7 @@
             </div>
         </div>
         
-        <div class="col-md-4 col-xl-3">
+        <div class="col-sm">
             <div class="lcard bg-c-green order-card">
                 <div class="card-block">
                     <h6 class="m-b-20">거래중</h6>
@@ -20,8 +25,8 @@
                 </div>
             </div>
         </div>
-        
-        <div class="col-md-4 col-xl-3">
+     
+        <div class="col-sm">
             <div class="lcard bg-c-yellow order-card">
                 <div class="card-block">
                     <h6 class="m-b-20">등록대기중</h6>
@@ -30,7 +35,7 @@
             </div>
         </div>
         
-        <div class="col-md-4 col-xl-3">
+        <div class="col-sm">
             <div class="lcard bg-c-pink order-card">
                 <div class="card-block">
                     <h6 class="m-b-20">판매완료</h6>
@@ -38,6 +43,7 @@
                 </div>
             </div>
         </div>
+       
 	</div>
 </div>
 
@@ -192,3 +198,4 @@
 
 </body>
 </html>
+<%@ include file="../layout/footer.jsp" %>

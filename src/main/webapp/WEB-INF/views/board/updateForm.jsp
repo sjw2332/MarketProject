@@ -5,7 +5,7 @@
 <link href="resources/css/board.css" rel="stylesheet" />
 <body class="bgdcolor">
 
-<div class="container" style="width:600px;">
+<div class="container margin-top-100" style="width:600px;">
 	<form method="post" action="#" onsubmit="myFunction()">
 		<div class="row">
 	    		<h2>판매물품 수정하기</h2>

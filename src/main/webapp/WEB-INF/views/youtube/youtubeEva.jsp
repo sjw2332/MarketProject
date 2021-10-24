@@ -5,7 +5,7 @@
 
 	 
 	
-	<div class="container prof">
+	<div class="container prof margin-top-50">
 		<div class="item photo">
 			 <div class=" image d-flex flex-column "> 
 		        <button class="btn btn-secondary">

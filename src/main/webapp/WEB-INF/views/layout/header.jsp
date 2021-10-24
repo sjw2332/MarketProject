@@ -121,6 +121,7 @@
   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   	<!-- 링크 추가 지희끝 -->
 
-
+	<!-- size css -->
+	<link href="resources/css/publicSize.css" rel="stylesheet" />
 </body>
 </html>

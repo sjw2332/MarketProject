@@ -5,7 +5,7 @@
 <link href="resources/css/board.css" rel="stylesheet" />
 <body class="bgdcolor">
 
-<div class="container">
+<div class="container margin-top-100">
 	<div class="input-group mb-3">
 	  <div class="input-group-prepend">
 				<select class="custom-select">

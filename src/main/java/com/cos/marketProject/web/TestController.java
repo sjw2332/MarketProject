@@ -56,22 +56,18 @@ public class TestController {
 	
 	
 	
-	@GetMapping("/test/loginForm")
+	@GetMapping("/test/loginform")
 	public String 로그인() {
 		return "user/loginForm";
 	}
 
 	
-	@GetMapping("/test/login2")
-	public String 로그인2() {
-		return "user/logintest";
-	}
 
 	
 	
 	@GetMapping("/test/userfindform")
 	public String find() {
-		return "user/userfindForm";
+		return "user/userFindForm";
 	}
 	
 	
