@@ -115,7 +115,7 @@ p {
   margin: 0;
   font-size: 18px;
   font-weight: 500;
-  color: #9195a2;
+  color: rgb(255, 255, 255);
 }
 
 .section-with-bg {
@@ -224,7 +224,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  color: rgba(202, 206, 221, 0.8);
+  color: rgb(255, 255, 255);
   font-family: "Raleway", sans-serif;
   font-weight: 600;
   font-size: 14px;
@@ -254,7 +254,7 @@ p {
   width: 100%;
 }
 .navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
-  color: #fff;
+  color: #f82249;
 }
 .navbar .dropdown ul {
   display: block;
@@ -329,7 +329,7 @@ p {
 }
 #main:before {
   content: "";
-  background: rgb(44, 44, 44);
+  background:#2c2c2c;
   position: absolute;
   bottom: 0;
   top: 0;
@@ -419,7 +419,7 @@ p {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid rgb(192, 192, 192);
+  border: 1px solid  #fff;
 }
 #list .swiper-pagination .swiper-pagination-bullet-active {
   background-color: #f82249;
@@ -454,7 +454,7 @@ p {
 }
 #testValue:before {
   content: "";
-  background: rgb(44, 44, 44);
+  background: #2c2c2c;
   position: absolute;
   bottom: 0;
   top: 0;
@@ -540,8 +540,8 @@ p {
   
 }
 #buy-tickets .card .card-price {
-  font-size: 48px;
-  margin: 0;
+  font-size: 38px;
+  margin-bottom: 20px;
   color: #f82249;
   
 }
@@ -586,6 +586,7 @@ p {
 #contact {
   padding: 60px 0;
   width: 100%;
+  background: #2c2c2c;
 }
 #contact .contact-info {
   margin-bottom: 20px;
@@ -713,13 +714,12 @@ p {
 --------------------------------------------------------------*/
 #footer {
   background: #2c2c2c;
-  padding: 0 0 25px 0;
+  padding: 200px 0 25px 0;
   color: #eee;
   font-size: 14px;
 }
 #footer .footer-top {
-  background: #2c2c2c;
-  padding: 60px 0 30px 0;
+  background: rgb(19, 19, 19);
 }
 #footer .footer-top .footer-info {
   margin-bottom: 30px;
