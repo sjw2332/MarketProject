@@ -54,7 +54,6 @@
 			<nav id="navbar" class="navbar order-last order  ">
 				<ul>
 					<li><a class="nav-link scrollto" href="/test/list">계정거래</a></li>
-					<li><a class="nav-link scrollto" href="/test/eva">계정가치평가</a></li>
 					<li><a class="nav-link scrollto" href="/test/contact">고객센터</a></li>
 
 				</ul>

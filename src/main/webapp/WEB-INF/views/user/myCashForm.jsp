@@ -4,12 +4,12 @@
 <%@ include file="../layout/header.jsp"%>
 <head>
 <style type="text/css">
- h1, h2, h3, h4, h5, h6 {
-  font-family: "Raleway", sans-serif;
-  font-weight: 400;
-  margin: 0 0 20px 0;
-  padding: 0;
-  color: #f82249;
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Raleway", sans-serif;
+	font-weight: 400;
+	margin: 0 0 20px 0;
+	padding: 0;
+	color: #f82249;
 }
 </style>
 <title>Testcontact</title>
@@ -56,22 +56,22 @@
 					<div data-aos="fade-up" data-aos-delay="100">
 						<div class="card mb-5 mb-lg-0">
 							<div class="card-body">
-								<h5 class="card-title text-uppercase text-center">보유
-									Cash</h5>
-								<h6 class="card-price text-center">50000</h6>
-								<hr>
-
 								<hr>
 								<div class="text-center">
+								<h5 class="card-title text-uppercase text-center">보유 Cash</h5>
+								<h6 class="card-price text-center">50000</h6>								
 									<button type="button" class="btn" data-bs-toggle="modal"
 										data-ticket-type="standard-access">충전</button>
 								</div>
 								<hr>
-								<div class="text-center" >
-									<button type="button" class="btn" data-bs-toggle="modal"
-										data-ticket-type="standard-access" style="background:blue">출금</button>
-								</div>
 								<hr>
+								<h5 class="card-title text-uppercase text-center">출금 계좌</h5>
+								<h6 class="card-price text-center" >부산은행 123-456-7890</h6>
+								<div class="text-center">
+									<button type="button" class="btn" data-bs-toggle="modal"
+										data-ticket-type="standard-access" style="background: blue">출금</button>
+								</div>
+								
 								<hr>
 							</div>
 						</div>
@@ -79,7 +79,7 @@
 
 
 				</div>
- 
+
 				<!-- Modal Order Form 
 				<div id="buy-ticket-modal" class="modal fade">
 					<div class="modal-dialog" role="document">
@@ -119,7 +119,7 @@
 					<!-- /.modal-dialog 
 				</div>
 				<!-- /.modal -->
-				
+
 			</section>
 			<!-- End Buy Ticket Section -->
 		</div>

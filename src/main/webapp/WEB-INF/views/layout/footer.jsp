@@ -18,7 +18,7 @@
 			<div class="container" style="padding:10px">
 				<div class="row" style="margin-top:50px">
 
-					<div class="col-lg-3 col-md-6 footer-info" style="margin-top:50px">
+					<div class="col-lg-3 col-md-6 footer-info" style="margin-top:20px">
 						<h1>My<span>Tube</span></h1>
 					
 						<p>성재욱 박정인 예지희 조현래</p>
