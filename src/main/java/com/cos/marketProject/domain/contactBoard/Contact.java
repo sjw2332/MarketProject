@@ -1,4 +1,4 @@
-package com.cos.marketProject.domain.board;
+package com.cos.marketProject.domain.contactBoard;
 
 import java.time.LocalDateTime;
 
@@ -19,34 +19,23 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@AllArgsConstructor
-@NoArgsConstructor
 @Data
 @Entity
-public class Board {
+@NoArgsConstructor
+@AllArgsConstructor
+public class Contact {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int board_id;
+	private int id;
 	
-	@JoinColumn(name = "sellerId")
+	//id, email, name 가져와야함.
+	@JoinColumn(name = "userId")
 	@ManyToOne(fetch = FetchType.EAGER)
 	private User user;
 	private String title;
-	private String category;
-	private int price;
 	@Lob
 	private String content;
-	private String img;
-	private String yAddress;
 	private LocalDateTime writtenDate;
-	private String tradelvl;
-	private int click;
-	@JoinColumn(name = "buyerId")
-	@ManyToOne(fetch = FetchType.EAGER)
-	private User buyer;
-	
-
-	
 	
 	@PrePersist 
 	public void writtenDate() {
