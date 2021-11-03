@@ -8,6 +8,7 @@
 - JPA
 - MariaDB
 - JSP TemplateEngine
+- JSoup
 
 ### DB 연결방법
 
