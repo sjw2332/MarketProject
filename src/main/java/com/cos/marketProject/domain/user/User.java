@@ -30,6 +30,7 @@ public class User {
 	private String phone;
 	private String bank;
 	private String account;
+	@Column(columnDefinition = "ingeter default 0")
 	private int cash;
 	private LocalDateTime joinDate;
 	

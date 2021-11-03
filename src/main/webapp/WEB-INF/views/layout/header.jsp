@@ -24,18 +24,18 @@
 	rel="stylesheet">
 
 <!-- Vendor CSS Files  -->
-<!--<link href="resources/vendor/aos/aos.css" rel="stylesheet">-->
-<link href="resources/vendor/bootstrap/css/bootstrap.min.css"
+<!--<link href="../resources/vendor/aos/aos.css" rel="stylesheet">-->
+<link href="../resources/vendor/bootstrap/css/bootstrap.min.css"
 	rel="stylesheet">
-<link href="resources/vendor/bootstrap-icons/bootstrap-icons.css"
+<link href="../resources/vendor/bootstrap-icons/bootstrap-icons.css"
 	rel="stylesheet">
-<link href="resources/vendor/glightbox/css/glightbox.min.css"
+<link href="../resources/vendor/glightbox/css/glightbox.min.css"
 	rel="stylesheet">
-<link href="resources/vendor/swiper/swiper-bundle.min.css"
+<link href="../resources/vendor/swiper/swiper-bundle.min.css"
 	rel="stylesheet">
 
 <!-- Template Main CSS File -->
-<link href="resources/css/style.css" rel="stylesheet">
+<link href="../../resources/css/style.css" rel="stylesheet">
 
 </head>
 <body>
@@ -48,7 +48,7 @@
 				<h1>
 					<a href="/">My<span>Tube</span></a>
 				</h1>
-				<!--<a href="index.jsp" class="scrollto"><img src="resources/img/logo.png" alt="" title=""></a>-->
+				<!--<a href="index.jsp" class="scrollto"><img src="../resources/img/logo.png" alt="" title=""></a>-->
 			</div>
 
 			<nav id="navbar" class="navbar order-last order  ">
@@ -106,14 +106,14 @@
 
 
 	<!-- Core theme JS-->
-	<script src="resources/js/scripts.js"></script>
+	<script src="../resources/js/scripts.js"></script>
 	<!-- 링크 추가 재욱 -->
-	<link href="resources/css/stylejw.css" rel="stylesheet">
+	<link href="../resources/css/stylejw.css" rel="stylesheet">
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet"> 
 	<!-- 링크 추가 재욱끝 -->
 	<!-- 현래 css -->
 
-	<link href="resources/css/user.css" rel="stylesheet"/>
+	<link href="../resources/css/user.css" rel="stylesheet"/>
 	<!-- 링크 추가 지희 -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -121,6 +121,12 @@
   	<!-- 링크 추가 지희끝 -->
 
 	<!-- size css -->
-	<link href="resources/css/publicSize.css" rel="stylesheet" />
+	<link href="../resources/css/publicSize.css" rel="stylesheet" />
+	
+	<!-- summernote -->
+	<link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css"
+	rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
+	
 </body>
 </html>

@@ -2,11 +2,11 @@
     pageEncoding="UTF-8"%>
 <%@ include file="../layout/header.jsp"%>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-<link href="resources/css/board.css" rel="stylesheet" />
+<link href="../resources/css/board.css" rel="stylesheet" />
 <body class="bgdcolor">
 
-<div class="container margin-top-100" style="width:600px" >
-	<form method="post" action="#" onsubmit="myFunction()">
+<div class="container margin-top-100" style="width:600px;" >
+	<form method="post" action="#" onsubmit="myFunction()" >
 		<div class="row">
 	    		<h2>판매물품 등록하기</h2>
 		</div>
@@ -45,22 +45,23 @@
 		<div class="row">
 	            	<div class="text_left">
 	                  <label for="content" >상세 글 적기:</label>
-	                  <textarea class="form-control" id="content" rows="5"></textarea>
 	                </div>
 		</div>
+		<div class="row" style="background-color:white; padding:0; margin:0; color:black;">
+	            	<div class="text_left">
+	                  <textarea class="form-control" id="summernote" rows="5" ></textarea>
+	                </div>
+		</div>
+		
+		
+		
 		<div class="row">	                
 		        	<div class="text_left pad-t10">
 		            	<label for="link" >MyTube 가치평가 연동주소:</label>
 		                <input type="text" class="form-control" placeholder="주소를 입력하세요">
 		            </div>
 		</div>
-		<div class="row">	            
-	            	<div class="text_left pad-t10">
-	                	<label for="formFile" class="form-label">이미지 첨부:</label>
-	                	<input class="form-control" type="file"  multiple="multiple" id="formFile" onchange="setDetailImage(event);">
-	                	<br>
-	                </div>
-		</div>
+		
 		<div class="row">
 		        	<div class="text-center">
 		            	<button type="submit" class="btn btn-primary width100">완료</button>
@@ -75,6 +76,14 @@
 	  alert("등록완료 되었습니다");
 	}
 </script>
+<script>
+	 $('#summernote').summernote({
+	      height: 350
+	      
+	 });
+	 
+</script>
+
 
 </body>
 </html>
