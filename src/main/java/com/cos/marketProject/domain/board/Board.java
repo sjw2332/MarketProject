@@ -39,7 +39,7 @@ public class Board {
 	//private String img;
 	private String yAddress;
 	private LocalDateTime writtenDate;
-	@Column(columnDefinition = "varchar(10) default '등록대기중'")
+	@Column(columnDefinition = "integer default 0")
 	private String tradelvl;
 	@Column(columnDefinition = "integer default 0")
 	private int click;
