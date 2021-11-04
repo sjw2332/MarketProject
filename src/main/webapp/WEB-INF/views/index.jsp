@@ -56,7 +56,7 @@ p {
 	rel="stylesheet">-->
 
 <!-- Template Main CSS File -->
-<link href="resources/css/style.css" rel="stylesheet">
+<link href="../resources/css/style.css" rel="stylesheet">
 
 <!-- =======================================================
   * Template Name: TheEvent - v4.6.0
@@ -138,36 +138,36 @@ p {
 		<div class="gallery-slider swiper">
 			<div class="swiper-wrapper align-items-center">
 				<div class="swiper-slide">
-					<a href="resources/img/gallery/1.jpg" class="gallery-lightbox"><img
-						src="resources/img/gallery/1.jpg" class="img-fluid" alt=""></a>
+					<a href="../resources/img/gallery/1.jpg" class="gallery-lightbox"><img
+						src="../resources/img/gallery/1.jpg" class="img-fluid" alt=""></a>
 				</div>
 				<div class="swiper-slide">
-					<a href="resources/img/gallery/2.jpg" class="gallery-lightbox"><img
-						src="resources/img/gallery/2.jpg" class="img-fluid" alt=""></a>
+					<a href="../resources/img/gallery/2.jpg" class="gallery-lightbox"><img
+						src="../resources/img/gallery/2.jpg" class="img-fluid" alt=""></a>
 				</div>
 				<div class="swiper-slide">
-					<a href="resources/img/gallery/3.jpg" class="gallery-lightbox"><img
-						src="resources/img/gallery/3.jpg" class="img-fluid" alt=""></a>
+					<a href="../resources/img/gallery/3.jpg" class="gallery-lightbox"><img
+						src="../resources/img/gallery/3.jpg" class="img-fluid" alt=""></a>
 				</div>
 				<div class="swiper-slide">
-					<a href="resources/img/gallery/4.jpg" class="list-lightbox"><img
-						src="resources/img/gallery/4.jpg" class="img-fluid" alt=""></a>
+					<a href="../resources/img/gallery/4.jpg" class="list-lightbox"><img
+						src="../resources/img/gallery/4.jpg" class="img-fluid" alt=""></a>
 				</div>
 				<div class="swiper-slide">
-					<a href="resources/img/gallery/5.jpg" class="list-lightbox"><img
-						src="resources/img/gallery/5.jpg" class="img-fluid" alt=""></a>
+					<a href="../resources/img/gallery/5.jpg" class="list-lightbox"><img
+						src="../resources/img/gallery/5.jpg" class="img-fluid" alt=""></a>
 				</div>
 				<div class="swiper-slide">
-					<a href="resources/img/gallery/6.jpg" class="list-lightbox"><img
-						src="resources/img/gallery/6.jpg" class="img-fluid" alt=""></a>
+					<a href="../resources/img/gallery/6.jpg" class="list-lightbox"><img
+						src="../resources/img/gallery/6.jpg" class="img-fluid" alt=""></a>
 				</div>
 				<div class="swiper-slide">
-					<a href="resources/img/gallery/7.jpg" class="list-lightbox"><img
-						src="resources/img/gallery/7.jpg" class="img-fluid" alt=""></a>
+					<a href="../resources/img/gallery/7.jpg" class="list-lightbox"><img
+						src="../resources/img/gallery/7.jpg" class="img-fluid" alt=""></a>
 				</div>
 				<div class="swiper-slide">
-					<a href="resources/img/gallery/8.jpg" class="list-lightbox"><img
-						src="resources/img/gallery/8.jpg" class="img-fluid" alt=""></a>
+					<a href="../resources/img/gallery/8.jpg" class="list-lightbox"><img
+						src="../resources/img/gallery/8.jpg" class="img-fluid" alt=""></a>
 				</div>
 			</div>
 			<div class="swiper-pagination"></div>
@@ -188,14 +188,14 @@ p {
 		class="bi bi-arrow-up-short"></i></a>
 
 	<!-- Vendor JS Files -->
-	<script src="resources/vendor/aos/aos.js"></script>
-	<script src="resources/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-	<script src="resources/vendor/glightbox/js/glightbox.min.js"></script>
-	<script src="resources/vendor/php-email-form/validate.js"></script>
-	<script src="resources/vendor/swiper/swiper-bundle.min.js"></script>
+	<script src="../resources/vendor/aos/aos.js"></script>
+	<script src="../resources/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<script src="../resources/vendor/glightbox/js/glightbox.min.js"></script>
+	<script src="../resources/vendor/php-email-form/validate.js"></script>
+	<script src="../resources/vendor/swiper/swiper-bundle.min.js"></script>
 
 	<!-- Template Main JS File -->
-	<script src="resources/js/main.js"></script>
+	<script src="../resources/js/main.js"></script>
 </body>
 
 </html>
