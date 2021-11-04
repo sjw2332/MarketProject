@@ -26,11 +26,11 @@ public class User {
 	private String email;
 	private String password;
 	private String name;
-	private LocalDateTime birth;
+	//private LocalDateTime birth;
 	private String phone;
 	private String bank;
 	private String account;
-	@Column(columnDefinition = "ingeter default 0")
+	@Column(columnDefinition = "integer default 0")
 	private int cash;
 	private LocalDateTime joinDate;
 	
