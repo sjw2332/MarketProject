@@ -22,7 +22,7 @@ public class JoinReqDto {
 	@NotBlank
 	private String password;
 	private String name;
-	private LocalDateTime birth;	//타입 정하기
+	//private LocalDateTime birth;	//타입 정하기
 	private String phone;
 	private String bank;
 	private String account;
@@ -32,7 +32,8 @@ public class JoinReqDto {
 		user.setEmail(email);
 		user.setPassword(password);
 		user.setName(name);
-		user.setBirth(birth);
+		//user.setBirth(birth);
+		user.setPhone(phone);
 		user.setBank(bank);
 		user.setAccount(account);
 		return user;
