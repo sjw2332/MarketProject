@@ -128,6 +128,7 @@ p {
 #header {
   height: 90px;
  /*  position: fixed; */
+  background: black;
   left: 0;
   top: 0;
   right: 0;
@@ -713,7 +714,7 @@ p {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #2c2c2c;
+ /*  background: #2c2c2c; */
   padding: 200px 0 25px 0;
   color: #eee;
   font-size: 14px;

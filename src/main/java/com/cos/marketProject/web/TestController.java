@@ -92,6 +92,11 @@ public class TestController {
 		return "user/sellList";
 	}
 
+	@GetMapping("/test/jointest")
+	public String testjoin() {
+		return "user/jointest";
+	}
+
 	
 	@GetMapping("/")
 	public String test4() {
