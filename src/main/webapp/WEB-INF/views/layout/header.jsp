@@ -64,16 +64,18 @@
 
 				<ul>
 					<c:choose>
-						<c:when test="">
-							<li><a class="nav-link scrollto" href="/test/join">Join</a></li>
+						<c:when test="${empty sessionScope.principal}">
+							<a class="login-nav scrollto" href="/test/join"
+								style="margin-left: 10px">JOIN</a>
 						</c:when>
 						<c:otherwise>
 							<li class="dropdown"><a href="/test/mylist"><span>MyPage</span> <i
 									class="bi bi-chevron-down"></i></a>
 								<ul>
-									<li><a href="/test/update">회원정보수정</a></li>
+									<li><a href="/test/update/${sessionScope.principal.id }">회원정보수정</a></li>
 									<li class="dropdown"><a><span>거래내역</span> <i class="bi bi-chevron-right"></i></a>
 										<ul>
+											<li><a href="/test/selllist">판매 등록 내역</a></li>
 											<li><a href="/test/selllist">판매 내역</a></li>
 											<li><a href="/test/buylist">구매 내역</a></li>
 
@@ -88,12 +90,12 @@
 					</c:choose>
 					<!-- .navbar -->
 					<c:choose>
-						<c:when test="#">
-							<a class="login-nav scrollto" href="/test/loginForm"
+						<c:when test="${empty sessionScope.principal}">
+							<a class="login-nav scrollto" href="/test/loginform"
 								style="margin-left: 10px">Login</a>
 						</c:when>
 						<c:otherwise>
-							<a class="login-nav scrollto" href="/test/loginForm"
+							<a class="login-nav scrollto" href="/test/index"
 								style="margin-left: 10px">Logout</a>
 						</c:otherwise>
 					</c:choose>
