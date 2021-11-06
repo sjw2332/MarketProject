@@ -63,9 +63,9 @@
 		</div>
 		
 		<div class="row">
-		        	<div class="text-center">
+		        	<div class="text-center margin-top-50">
 		            	<button type="submit" class="btn btn-primary width100">완료</button>
-		                <button type="button" class="btn btn-danger width100 marg-l30" onclick="location.href='list' ">취소</button>
+		                <a type="button" class="btn btn-danger width100 marg-l30" href="/board/list?page=0">취소</a>
 		            </div>
 		        </div>
 	</form>

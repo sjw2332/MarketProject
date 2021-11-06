@@ -47,14 +47,15 @@
 	                        <!-- 해당 페이지에 띄울 거래단계 설정 -->
 	                        	<c:if test="${board.tradelvl eq 0}"> 
                                
-                                <tr>
+                                <tr> 
                                     <th scope="row" >
                                   	  <h5><span class="badge badge-success">거래대기중</span></h5>
                                     </th>
                                     <td>${board.category}</td>
-                                    <td>${board.title}</td>
+                                    <td><a href="/board/${board.board_id}">${board.title}</a></td>
                                     <td>${board.price} </td>
                                     <td>${board.writtenDate}</td>
+                               
                                 </tr>
                            		</c:if>
                                 </c:forEach> 

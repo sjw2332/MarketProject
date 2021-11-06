@@ -12,3 +12,8 @@
 .width-600 {
 	width: 600px;
 }
+
+.my-hr2 {
+	height: 2px;
+	background-color:#f82249;
+}

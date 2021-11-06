@@ -24,6 +24,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import com.cos.marketProject.domain.board.Board;
 import com.cos.marketProject.domain.board.BoardRepository;
 import com.cos.marketProject.domain.user.User;
+import com.cos.marketProject.handler.ex.MyNotFoundException;
 import com.cos.marketProject.util.Script;
 import com.cos.marketProject.web.dto.BoardSaveReqDto;
 import com.cos.marketProject.web.dto.CMRespDto;
@@ -41,7 +42,8 @@ public class BoardController {
 	//----------------게시글 상세보기 ---------------------
 	@GetMapping("/board/{id}")
 	public String detail(@PathVariable int id, Model model) {
-		
+		Board boardEntity = boardRepository.findById(id).orElseThrow(()->new MyNotFoundException(id+"해당 게시글을 찾을 수 없습니다."));
+		model.addAttribute("boardEntity", boardEntity);
 				
 		return "board/detail";
 	}
