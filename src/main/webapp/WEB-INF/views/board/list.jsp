@@ -41,60 +41,26 @@
                                     <th scope="col">등록일</th>
                                 </tr>
                             </thead>
+                            
                             <tbody class="text-center">
+                               	<c:forEach var="board" items="${boardsEntity.content}">
+	                        <!-- 해당 페이지에 띄울 거래단계 설정 -->
+	                        	<c:if test="${board.tradelvl eq 0}"> 
+                               
                                 <tr>
                                     <th scope="row" >
-                                    <h5><span class="badge badge-success">거래중</span></h5>
+                                  	  <h5><span class="badge badge-success">거래대기중</span></h5>
                                     </th>
-                                    <td>IT</td>
-                                    <td>생활코딩 채널 팝니다</td>
-                                    <td>
-                                      5,000만원
-                                    </td>
-                                    <td>
-                                        2021-10-19
-                                    </td>
+                                    <td>${board.category}</td>
+                                    <td>${board.title}</td>
+                                    <td>${board.price} </td>
+                                    <td>${board.writtenDate}</td>
                                 </tr>
-                                 <tr>
-                                    <th scope="row">
-                                     <h5><span class="badge badge-primary">판매등록</span></h5>
-                                    </th>
-                                    <td>게임</td>
-                                    <td>LCK Korea 채널 팝니다</td>
-                                    <td>
-                                      5,000만원
-                                    </td>
-                                    <td>
-                                        2021-10-19
-                                    </td>
-                                </tr>
-                                 <tr>
-                                    <th scope="row">
-                                      <h5><span class="badge badge-warning">등록대기중</span></h5>
-                                    </th>
-                                    <td>요리</td>
-                                    <td>백종원의 요리비책 채널 팝니다</td>
-                                    <td>
-                                      5,000만원
-                                    </td>
-                                    <td>
-                                        2021-10-19
-                                    </td>
-                                </tr>
-                                 <tr>
-                                    <th scope="row" >
-                                  	  <h5><span class="badge badge-danger">판매완료</span></h5>
-                                    </th>
-                                    <td>게임</td>
-                                    <td>Final Fantasy 5 팝니다</td>
-                                    <td>
-                                      5,000만원
-                                    </td>
-                                    <td>
-                                        2021-10-19
-                                    </td>
-                                </tr>
+                           		</c:if>
+                                </c:forEach> 
                             </tbody>
+                            
+                            
                         </table>
                     </div>
                     <!-- end project-list -->
@@ -103,6 +69,29 @@
         </div>
     </div>
     <!-- end row -->
+	   	<ul class="pagination d-flex justify-content-center margin-top-50">
+		<c:choose>
+			<c:when test="${boardsEntity.first eq true}">
+				<li class="page-item disabled"><a class="page-link"
+					href="/board/list?page=${boardsEntity.number - 1}">Prev</a></li>
+			</c:when>
+			<c:otherwise>
+				<li class="page-item"><a class="page-link"
+					href="/board/list?page=${boardsEntity.number - 1}">Prev</a></li>
+			</c:otherwise>
+		</c:choose>
+
+		<c:choose>
+			<c:when test="${boardsEntity.last eq true}">
+				<li class="page-item disabled"><a class="page-link"
+					href="/board/list?page=${param.page + 1}">Next</a></li>
+			</c:when>
+			<c:otherwise>
+				<li class="page-item"><a class="page-link"
+					href="/board/list?page=${param.page + 1}">Next</a></li>
+			</c:otherwise>
+		</c:choose>
+	</ul>
 	</div>
 </div>
 </body>

@@ -1,11 +1,19 @@
 package com.cos.marketProject.web;
 
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
 import javax.servlet.http.HttpSession;
 import javax.validation.Valid;
 
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
+import org.springframework.validation.FieldError;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -13,7 +21,9 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import com.cos.marketProject.domain.board.Board;
 import com.cos.marketProject.domain.board.BoardRepository;
+import com.cos.marketProject.domain.user.User;
 import com.cos.marketProject.util.Script;
 import com.cos.marketProject.web.dto.BoardSaveReqDto;
 import com.cos.marketProject.web.dto.CMRespDto;
@@ -80,7 +90,11 @@ public class BoardController {
 	
 	//----------------게시글 목록보기 ---------------------
 	@GetMapping("/board/list")
-	public String boardList() {
+	public String boardList(Model model, int page) {
+		PageRequest pageRequest = PageRequest.of(page, 3, Sort.by(Sort.Direction.DESC, "writtenDate"));
+		Page<Board> boardsEntity = boardRepository.findAll(pageRequest);
+		model.addAttribute("boardsEntity", boardsEntity);
+		System.out.println(model);
 		return "board/list";
 	}
 	
@@ -130,13 +144,35 @@ public class BoardController {
 	
 	//----------------게시글 작성하기 ---------------------
 	@PostMapping("/board/write")
-	public String boardWrite() {
-		return Script.href("/board/list","성공적으로 등록되었습니다.");
+	public @ResponseBody String boardWrite( @Valid BoardSaveReqDto dto, BindingResult bindingResult  ) {
+		User principal = (User) session.getAttribute("principal");
+
+		if (principal == null) {
+			return Script.href("/", "잘못된 접근입니다");
+		}
+
+		if (bindingResult.hasErrors()) {
+			Map<String, String> errorMap = new HashMap<>();
+			for (FieldError error : bindingResult.getFieldErrors()) {
+				errorMap.put(error.getField(), error.getDefaultMessage());
+			}
+			return Script.back(errorMap.toString());
+		}
+
+		boardRepository.save(dto.toEntity(principal));
+		
+		return Script.href("/board/list?page=0","성공적으로 등록되었습니다.");
 	}
 	
 	@GetMapping("/board/writeform")
 	public String boardWriteForm() {
-		return "board/writeform";
+		
+		User principal = (User) session.getAttribute("principal");
+
+		if (principal == null) {
+			return "user/loginForm";
+		}
+		return "board/writeForm";
 	}
 	
 	

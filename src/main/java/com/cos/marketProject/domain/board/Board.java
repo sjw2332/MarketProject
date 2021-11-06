@@ -40,7 +40,7 @@ public class Board {
 	private String yAddress;
 	private LocalDateTime writtenDate;
 	@Column(columnDefinition = "integer default 0")
-	private String tradelvl;
+	private int tradelvl;
 	@Column(columnDefinition = "integer default 0")
 	private int click;
 	@JoinColumn(name = "buyerId")

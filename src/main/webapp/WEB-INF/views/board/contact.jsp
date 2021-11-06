@@ -89,32 +89,31 @@
          </div>
 		<hr>
          <div class="form">
-            <form action="../resource/vendor/php-email-form/contact.php" method="post" role="form"
+            <form action="/contact/write" method="post" role="form"
                class="php-email-form">
                <div class="row">
                   <div class="form-group col-md-6">
-                     <input type="text" name="name" class="form-control" id="name"
+                     <input type="text" name="name" class="form-control" id="name" value="${sessionScope.principal.name}"
                         placeholder="Your Name" required>
                   </div>
                   <div class="form-group col-md-6 mt-3 mt-md-0">
-                     <input type="email" class="form-control" name="email" id="email"
+                     <input type="email" class="form-control" name="email" id="email" value="${sessionScope.principal.email}"
                         placeholder="Your Email" required>
                   </div>
                </div>
                <div class="form-group mt-3">
-                  <input type="text" class="form-control" name="subject"
+                  <input type="text" class="form-control" name="title"
                      id="subject" placeholder="Subject" required>
                </div>
                <div class="form-group mt-3">
-                  <textarea class="form-control" name="message" rows="5"
+                  <textarea class="form-control" name="content" rows="5"
                      placeholder="Message" required></textarea>
                </div>
-               <div class="my-3">
+              <!--  <div class="my-3">
                   <div class="loading">Loading</div>
                   <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank
-                     you!</div>
-               </div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+               </div> -->
                <hr>
                <div class="text-center">
                   <button type="submit">Send Message</button>
@@ -142,7 +141,7 @@
    <script src="../resources/vendor/aos/aos.js"></script>
    <script src="../resources/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
    <script src="../resources/vendor/glightbox/js/glightbox.min.js"></script>
-   <script src="../resources/vendor/php-email-form/validate.js"></script>
+  <!--  <script src="../resources/vendor/php-email-form/validate.js"></script> -->
    <script src="../resources/vendor/swiper/swiper-bundle.min.js"></script>
 
    <!-- Template Main JS File -->
