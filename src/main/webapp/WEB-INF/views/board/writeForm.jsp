@@ -6,7 +6,7 @@
 <body class="bgdcolor">
 
 <div class="container margin-top-100" style="width:600px;" >
-	<form method="post" action="#" onsubmit="myFunction()" >
+	<form method="post" action="/board/write"  >
 		<div class="row">
 	    		<h2>판매물품 등록하기</h2>
 		</div>
@@ -14,17 +14,17 @@
 	         		<div class="text_left" >
 					<br>
 		            	<label for="sell-title">제목:</label>
-		                <input type="text" class="form-control" id="sell-title" placeholder="제목을 입력하세요">
+		                <input type="text" class="form-control" name="title" id="sell-title" placeholder="제목을 입력하세요">
 	              	</div>
 	    </div>
 	    <div class="row">
 					<div class="form-group">
 						<label class="text_left pad-t10" for="category">카테고리:</label>
-							<select class="custom-select">
+							<select class="custom-select" name="category">
 			                    <option selected>선택</option>
-			                    <option value="trip">여행</option>
-			                    <option value="movie">영화</option>
-			                    <option value="cook">요리</option>
+			                    <option value="여행">여행</option>
+			                    <option value="영화">영화</option>
+			                    <option value="요리">요리</option>
 	                    	</select>
 					</div>
 		</div>	        	
@@ -35,7 +35,7 @@
 						  <div class="input-group-prepend">
 						    <span class="input-group-text">$</span>
 						  </div>
-						  <input type="text" class="form-control"  style = "text-align:right;" placeholder="단위: 만 원 ">
+						  <input type="text" class="form-control" name="price" style = "text-align:right;" placeholder="단위: 만 원 ">
 						  <div class="input-group-append">
 						    <span class="input-group-text">만 원</span>
 						  </div>
@@ -49,7 +49,7 @@
 		</div>
 		<div class="row" style="background-color:white; padding:0; margin:0; color:black;">
 	            	<div class="text_left">
-	                  <textarea class="form-control" id="summernote" rows="5" ></textarea>
+	                  <textarea class="form-control" name="content" id="summernote" rows="5" ></textarea>
 	                </div>
 		</div>
 		
@@ -58,7 +58,7 @@
 		<div class="row">	                
 		        	<div class="text_left pad-t10">
 		            	<label for="link" >MyTube 가치평가 연동주소:</label>
-		                <input type="text" class="form-control" placeholder="주소를 입력하세요">
+		                <input type="text" class="form-control" name="yAddress" placeholder="주소를 입력하세요">
 		            </div>
 		</div>
 		
@@ -71,11 +71,7 @@
 	</form>
 </div>
 
-<script>
-	function myFunction() {
-	  alert("등록완료 되었습니다");
-	}
-</script>
+
 <script>
 	 $('#summernote').summernote({
 	      height: 350
