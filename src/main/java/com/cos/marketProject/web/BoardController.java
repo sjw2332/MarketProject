@@ -24,6 +24,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import com.cos.marketProject.domain.board.Board;
 import com.cos.marketProject.domain.board.BoardRepository;
 import com.cos.marketProject.domain.user.User;
+import com.cos.marketProject.handler.ex.MyAsyncNotFoundException;
 import com.cos.marketProject.handler.ex.MyNotFoundException;
 import com.cos.marketProject.util.Script;
 import com.cos.marketProject.web.dto.BoardSaveReqDto;
@@ -48,102 +49,18 @@ public class BoardController {
 		return "board/detail";
 	}
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
 	//----------------게시글 목록보기 ---------------------
 	@GetMapping("/board/list")
 	public String boardList(Model model, int page) {
 		PageRequest pageRequest = PageRequest.of(page, 3, Sort.by(Sort.Direction.DESC, "writtenDate"));
 		Page<Board> boardsEntity = boardRepository.findAll(pageRequest);
 		model.addAttribute("boardsEntity", boardsEntity);
-		System.out.println(model);
 		return "board/list";
 	}
 	
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
 	//----------------게시글 작성하기 ---------------------
 	@PostMapping("/board/write")
 	public @ResponseBody String boardWrite( @Valid BoardSaveReqDto dto, BindingResult bindingResult  ) {
@@ -177,68 +94,25 @@ public class BoardController {
 		return "board/writeForm";
 	}
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
 	
 	//----------------게시글 수정하기 ---------------------
    @PutMapping("/board/{id}")
    public @ResponseBody CMRespDto<String> boardUpdate(@PathVariable int in, @RequestBody @Valid BoardSaveReqDto dto, BindingResult bindingResult) {
     
+	   if (bindingResult.hasErrors()) {
+			Map<String, String> errorMap = new HashMap<>();
+			for (FieldError error : bindingResult.getFieldErrors()) {
+				errorMap.put(error.getField(), error.getDefaultMessage());
+			}
+			throw new MyAsyncNotFoundException(errorMap.toString());
+		}
+
+		User principal = (User) session.getAttribute("principal");
+		if (principal == null) {
+			throw new MyAsyncNotFoundException("인증이 되지 않았습니다");
+		}
+		
 	   return new CMRespDto<>(1,"성공",null);
    }
 
@@ -246,8 +120,22 @@ public class BoardController {
    public String boardUpdateForm() {
 	   return "board/updateForm";
    }
+   	//----------------게시글 삭제하기 ---------------------
+   
+   
+   
+   
+   
+	//----------------admin page---------------------
+   @GetMapping("/admin")
+	public String admin(Model model, int page) {
+		PageRequest pageRequest = PageRequest.of(page, 3, Sort.by(Sort.Direction.DESC, "writtenDate"));
+		Page<Board> boardsEntity = boardRepository.findAll(pageRequest);
+		model.addAttribute("boardsEntity", boardsEntity);
+		return "admin";
+	}
 	
 	
 	
-	
+   
 }

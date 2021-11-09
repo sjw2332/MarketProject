@@ -97,6 +97,11 @@ public class TestController {
 		return "user/jointest";
 	}
 
+	@GetMapping("/test/admin")
+	public String admin() {
+		return "admin";
+	}
+
 	
 	@GetMapping("/")
 	public String test4() {
