@@ -22,6 +22,8 @@ import com.cos.marketProject.util.MyAlgorithm;
 import com.cos.marketProject.util.SHA;
 import com.cos.marketProject.util.Script;
 import com.cos.marketProject.web.dto.CMRespDto;
+import com.cos.marketProject.web.dto.ChangePwDto;
+import com.cos.marketProject.web.dto.FindPwReqDto;
 import com.cos.marketProject.web.dto.JoinReqDto;
 import com.cos.marketProject.web.dto.LoginReqDto;
 import com.cos.marketProject.web.dto.UserUpdateReqDto;
@@ -35,7 +37,7 @@ public class UserController {
 	//Dependency Injection
 	private final UserRepository userRepository;
 	private final HttpSession session;
-	
+	private int userId;
 	
 	
 	//----------------회원정보변경 ---------------------
@@ -239,7 +241,34 @@ public class UserController {
 		return "user/userFindForm";
 	}
 	
+	@PostMapping("/user/findPw/modal")
+	public @ResponseBody CMRespDto<String> pwFind(@RequestBody FindPwReqDto dto) {
+		
+		User userEntity = userRepository.mPWFind(dto.getName(), dto.getPhone(), dto.getEmail());
+		System.out.println(userEntity);
+		System.out.println(userId);
+		if(userEntity == null ) {
+			return new CMRespDto<>(0, "존재하지 않는 회원입니다.", null);
+		} else {
+			userId = userEntity.getId();
+			
+			return new CMRespDto<>(1, "성공", null);
+		}
+				
+
+	}
 	
+	// 비밀번호 변경 ------------------------------------
+	@PutMapping("/user/changePw")
+	public @ResponseBody CMRespDto<String> pwFind(@RequestBody ChangePwDto dto) {
+		
+		System.out.println(dto.getPassword());
+		
+		userRepository.mChangePw(userId, dto.getPassword());
+				
+		return new CMRespDto<>(1, "변경되었습니다.", null);
+
+	}
 	
 	
 	

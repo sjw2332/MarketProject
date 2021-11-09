@@ -6,89 +6,132 @@
 <!-- <link href="/resources/css/user.css" rel="stylesheet" /> -->
 
 <body class="bgcolor">
-	<form method="post" action="">
+	<form>
 		<div class="container login">
 			<div class="insert">
-				<div class="login_id">
-					<h4>Name</h4>
-					<input type="text" name="name" placeholder="Name">
+				<div class="mb-3">
+					<label for="email">이메일</label> <input type="email"
+						class="form-control" name="email" placeholder="이메일" id="email" required>
+					<div class="invalid-feedback">이메일을 입력해주세요.</div>
 				</div>
-				<br>
-				<div class="login_id">
-					<h4>Birth</h4>
-					<table
-						style="width: 90%; height: 50px; border-radius: 10px; margin-top: 10px; margin-left: 30px; padding: 0px 20px;">
-						<tr>
-							<td class="col2"><select name="birth" style="width: 20%; height: 50px;">
-									<option value="slc1" selected>선택</option>
-									<option value="g1">1</option>
-									<option value="g2">2</option>
-									<option value="g3">3</option>
-									<option value="g4">4</option>
-									<option value="g5">5</option>
-									<option value="g6">6</option>
-									<option value="g7">7</option>
-									<option value="g8">8</option>
-									<option value="g9">9</option>
-									<option value="g10">10</option>
-									<option value="g11">11</option>
-									<option value="g12">12</option>
-							</select> <span class="g">월</span> <select name="cls" style="width: 20%; height: 50px; margin-left: 10px">
-									<option value="slc2" selected>선택</option>
-									<option value="c1">1</option>
-									<option value="c2">2</option>
-									<option value="c3">3</option>
-									<option value="c4">4</option>
-									<option value="c5">5</option>
-									<option value="c6">9</option>
-									<option value="c7">7</option>
-									<option value="c8">8</option>
-									<option value="c9">9</option>
-									<option value="c10">10</option>
-									<option value="c11">11</option>
-									<option value="c12">12</option>
-									<option value="c13">13</option>
-									<option value="c14">14</option>
-									<option value="c15">15</option>
-									<option value="c16">16</option>
-									<option value="c17">17</option>
-									<option value="c18">18</option>
-									<option value="c19">19</option>
-									<option value="c20">20</option>
-									<option value="c21">21</option>
-									<option value="c22">22</option>
-									<option value="c23">23</option>
-									<option value="c24">24</option>
-									<option value="c25">25</option>
-									<option value="c26">26</option>
-									<option value="c27">27</option>
-									<option value="c28">28</option>
-									<option value="c29">29</option>
-									<option value="c30">30</option>
-									<option value="c31">31</option>
-							</select> <span class="c">일</span></td>
-						</tr>
-					</table>
-				</div>
-				<br>
-				<div class="login_id">
-					<h4>Contact</h4>
-					<input type="text" name="contact" placeholder="통화가능한 연락처를 기재하세요">
-				</div>
-				<br>
-				<div style="text-align: center; color: white;">
-					※ 빈칸이 없도록 작성하여야 정보를 찾을 수 있습니다.
-				</div>
-				<br>
-				<div class="create">
 
-					<input class="but3" type="button" value="회원찾기" onclick="">
+				<div class="mb-3">
+					<label for="password">이름 </label> <input type="text"
+						class="form-control" name="name" placeholder="이름" id="name" required>
+					<div class="invalid-feedback">이름을 다시 입력해주세요.</div>
+				</div>
+
+				<div class="mb-3">
+					<label for="address">연락처</label> <input type="text"
+						class="form-control" name="phone" placeholder="연락처" id="phone" required>
+					<div class="invalid-feedback">연락처를 입력해주세요.</div>
+				</div>
+
+					<input class="but3" type="submit" value="회원찾기" onclick="findPw(event)">
 					<input class="but4" type="button" value="취소"
 						onclick="formCheck(this.form)">
 				</div>
 			</div>
+		</form>
+				<!-- The Modal -->
+	<div class="modal fade" id="pwdFindModal">
+		<div class="modal-dialog">
+			<div class="modal-content">
+
+				<!-- Modal Header -->
+				<div class="modal-header">
+					<h4 class="modal-title">비밀번호 변경하기</h4>
+					<!-- <button type="button" class="btn-close" data-bs-dismiss="modal"></button>  -->
+				</div>
+
+				<!-- Modal body -->
+				<form onsubmit="changePw(event)">
+					<div class="modal-body">
+						<label for="password">비밀번호</label> 
+						<input type="password" class="form-control inputs" id="m_password" placeholder="패스워드를 입력하세요" name="m_password" required>
+					</div>
+				
+					<!-- Modal footer -->
+					<div class="modal-footer">
+						<button type="submit" class="btn btn-success">변경</button>
+						<button type="button" class="btn btn-danger" data-bs-dismiss="modal" onclick="window.location.reload()">닫기</button>
+					</div>
+
+			
+				</form>
+			</div>
 		</div>
-	</form>
+	</div>
+
+	<script>
+	async function findPw(event) {
+		event.preventDefault();
+	  			
+		console.log(document.querySelector("#email").value);
+		console.log(document.querySelector("#name").value);
+		console.log(document.querySelector("#phone").value);
+
+		let IdFindDto = {
+			   email: document.querySelector("#email").value,
+			   name: document.querySelector("#name").value,
+			   phone: document.querySelector("#phone").value
+	   };
+		
+		console.log(IdFindDto);
+
+		let response = await fetch("http://localhost:8080/user/findPw/modal", {
+			method: "post",
+			body: JSON.stringify(IdFindDto),
+			headers: {
+				"Content-Type": "application/json; charset=utf-8"
+			}
+		});
+		
+		let parseResponse = await response.json();
+		console.dir(parseResponse);
+		if(parseResponse.code == 1){
+			$("#pwdFindModal").modal('show');
+			
+		}else{
+			alert("업데이트 실패 : "+parseResponse.msg);
+		}
+
+	}
+	</script>
+	<script>
+	async function changePw(event) {
+		event.preventDefault();
+		
+		console.log(document.querySelector("#m_password").value);
+		
+		let pwChange = {
+			   password: document.querySelector("#m_password").value
+	   };
+		
+		console.log(pwChange);
+		
+		let response = await fetch("http://localhost:8080/user/changePw", {
+			method: "put",
+			body: JSON.stringify(pwChange),
+			headers: {
+				"Content-Type": "application/json; charset=utf-8"
+			}
+		});
+		
+		let parseResponse = await response.json();
+		console.dir(parseResponse);
+
+		if(parseResponse.code == 1){
+			alert(parseResponse.msg);
+			//location.href= "/user/loginForm";
+			
+		}else{
+			alert("업데이트 실패 : "+parseResponse.msg);
+		}
+
+	}
+
+	</script>
 
 
 
