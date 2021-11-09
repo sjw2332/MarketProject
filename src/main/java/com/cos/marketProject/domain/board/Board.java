@@ -37,7 +37,7 @@ public class Board {
 	@Lob
 	private String content;
 	//private String img;
-	private String yAddress;
+	private String youtube;
 	private LocalDateTime writtenDate;
 	@Column(columnDefinition = "integer default 0")
 	private int tradelvl;

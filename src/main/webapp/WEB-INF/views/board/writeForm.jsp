@@ -58,7 +58,7 @@
 		<div class="row">	                
 		        	<div class="text_left pad-t10">
 		            	<label for="link" >MyTube 가치평가 연동주소:</label>
-		                <input type="text" class="form-control" name="yAddress" placeholder="주소를 입력하세요">
+		                <input type="text" class="form-control" name="youtube" placeholder="주소를 입력하세요">
 		            </div>
 		</div>
 		
