@@ -13,7 +13,13 @@ public interface UserRepository extends JpaRepository<User, Integer> {
 	@Query(value = "select * from user where email = :email and password = :password", nativeQuery = true)
 	User mLogin(String email, String password);	
 		
-		
+	// 비밀번호 변경 쿼리
+	
+	@Query(value = "select * from user where name = :name and phone = :phone and email = :email", nativeQuery = true)
+	User mPWFind(String name, String phone, String email);
+	
+	@Query(value = "update user set password = :password  where id = :id", nativeQuery = true)
+	User mChangePw(int id, String password);		
 		
 		
 		
