@@ -18,6 +18,8 @@ public class BoardSaveReqDto {
 	private int price;
 	private String img;
 	private String youtube;
+	private int buyerId;
+	private int tradelvl;
 	
 	public Board toEntity(User principal) {
 		Board board = new Board();

@@ -181,6 +181,25 @@ public class BoardController {
 		return "admin";
 	}
 	
+   
+   //구매하기
+   @PutMapping("/board/{id}/buy")
+	public @ResponseBody CMRespDto<String> buyById(@PathVariable int id, @RequestBody @Valid BoardSaveReqDto dto,
+			BindingResult bindingResult) {
+		User principal = (User) session.getAttribute("principal");
+		if (principal == null) {
+			throw new MyAsyncNotFoundException("인증이 되지 않았습니다.");
+		}
+		
+		Board boardEntity = boardRepository.findById(id)
+				.orElseThrow(() -> new MyAsyncNotFoundException("해당 게시글을 찾을 수 없습니다."));
+
+		boardEntity.setBuyer(principal);
+		boardEntity.setTradelvl(2);
+		boardRepository.save(boardEntity);
+		
+		return new CMRespDto<String>(1, "성공", null);
+	}
 	
 	
    
