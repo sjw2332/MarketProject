@@ -140,9 +140,16 @@ body {
 						<hr class="my-hr2" style="height: 2px">
 						<div class="conten-yaddress">https://www.youtube.com/c/${boardEntity.youtube }  </div>
 						<br>
-						<button type="button" class="btn btn-danger btn-block"  onclick="#">가치평가보기</button>
+						<button type="button" class="btn btn-danger btn-block" onclick="openPop()">가치평가보기</button>
 						<br>
-						<button type="button" class="btn btn-info btn-block"  onclick="buyById(${boardEntity.board_id})">구매하기</button>
+						<c:choose>
+							<c:when test="${boardEntity.tradelvl == 1}">
+							<button type="button" class="btn btn-info btn-block"  onclick="buyById(${boardEntity.board_id})">구매하기</button>
+							</c:when>
+							<c:when test="${boardEntity.tradelvl == 2}">
+							<button type="button" class="btn btn-warning btn-block"  onclick="#">최종거래확인</button>
+							</c:when>
+						</c:choose>
 
 					</div>
 				</div>
@@ -198,12 +205,19 @@ body {
 		
 		if(parseResponse.code == 1){
 			alert("구매 성공");
-			//location.href="/";
+			location.href="/board/list?page=0";
 		}else{
 			//alert(parseResponse.msg);
 			//location.href="/";
 		}
 	}
+	
+
+</script>
+<script>
+function openPop(){
+	var popup = window.open('http://localhost:8080/test/eva', '테스트','width=800, height=600')
+}
 </script>
  
  

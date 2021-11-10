@@ -9,7 +9,7 @@
 		<div class="item photo">
 			 <div class=" image d-flex flex-column "> 
 		        <button class="btn btn-secondary">
-		         	<img src="https://i.imgur.com/wvxPV9S.png" height="100" width="100" />
+		         	<img src="https://res-kol.noxgroup.com/noxinfluencer/youtube/avatar/41371b4e2c86cd343cd5cc1b29c46306.png" height="100" width="100" />
 		        </button>
 		        <button class="btn1 btn-dark" >방문하기</button>
 	        </div>

@@ -45,11 +45,11 @@
                             <tbody class="text-center">
                                	<c:forEach var="board" items="${boardsEntity.content}">
 	                        <!-- 해당 페이지에 띄울 거래단계 설정 -->
-	                        	<c:if test="${board.tradelvl eq 0}"> 
+	                        	<c:if test="${board.tradelvl eq 1}"> 
                                
                                 <tr> 
                                     <th scope="row" >
-                                  	  <h5><span class="badge badge-success">거래대기중</span></h5>
+                                  	  <h5><span class="badge badge-primary">판매중</span></h5>
                                     </th>
                                     <td>${board.category}</td>
                                     <td><a href="/board/${board.board_id}">${board.title}</a></td>

@@ -109,7 +109,7 @@ rel="stylesheet">
 								style="margin-left: 10px">Login</a>
 						</c:when>
 						<c:otherwise>
-							<a class="login-nav scrollto" href="/test/index"
+							<a class="login-nav scrollto" href="/logout"
 								style="margin-left: 10px">Logout</a>
 						</c:otherwise>
 					</c:choose>

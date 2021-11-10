@@ -39,9 +39,10 @@ public class Board {
 	//private String img;
 	private String youtube;
 	private LocalDateTime writtenDate;
-	@Column(columnDefinition = "integer default 0")
+	@Column(columnDefinition = "integer default 1")
 	private int tradelvl;
-	@Column(columnDefinition = "integer default 0")
+	
+	@Column(columnDefinition = "integer default 1")
 	private int click;
 	@JoinColumn(name = "buyerId")
 	@ManyToOne(fetch = FetchType.EAGER)

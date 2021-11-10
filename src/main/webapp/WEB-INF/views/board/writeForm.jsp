@@ -25,6 +25,7 @@
 			                    <option value="여행">여행</option>
 			                    <option value="영화">영화</option>
 			                    <option value="요리">요리</option>
+			                    <option value="IT">IT</option>
 	                    	</select>
 					</div>
 		</div>	        	

@@ -29,6 +29,7 @@ public class BoardSaveReqDto {
 		board.setContent(content);
 		//board.setImg(img);  
 		board.setYoutube(youtube);
+		board.setTradelvl(tradelvl);
 		board.setUser(principal);
 		return board;
 	}
