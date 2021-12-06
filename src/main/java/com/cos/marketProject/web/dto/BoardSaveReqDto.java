@@ -17,7 +17,9 @@ public class BoardSaveReqDto {
 	private String category;
 	private int price;
 	private String img;
-	private String yAddress;
+	private String youtube;
+	private int buyerId;
+	private int tradelvl;
 	
 	public Board toEntity(User principal) {
 		Board board = new Board();
@@ -25,8 +27,9 @@ public class BoardSaveReqDto {
 		board.setCategory(category);
 		board.setPrice(price);
 		board.setContent(content);
-		//board.setImg(img); 
-		board.setYAddress(yAddress);
+		//board.setImg(img);  
+		board.setYoutube(youtube);
+		board.setTradelvl(tradelvl);
 		board.setUser(principal);
 		return board;
 	}

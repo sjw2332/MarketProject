@@ -25,26 +25,26 @@
 
 <!-- Vendor CSS Files  -->
 <!--<link href="../resources/vendor/aos/aos.css" rel="stylesheet">-->
-<link href="../resources/vendor/bootstrap/css/bootstrap.min.css"
+<link href="../../resources/vendor/bootstrap/css/bootstrap.min.css"
 	rel="stylesheet">
-<link href="../resources/vendor/bootstrap-icons/bootstrap-icons.css"
+<link href="../../resources/vendor/bootstrap-icons/bootstrap-icons.css"
 	rel="stylesheet">
-<link href="../resources/vendor/glightbox/css/glightbox.min.css"
+<link href="../../resources/vendor/glightbox/css/glightbox.min.css"
 	rel="stylesheet">
-<link href="../resources/vendor/swiper/swiper-bundle.min.css"
+<link href="../../resources/vendor/swiper/swiper-bundle.min.css"
 	rel="stylesheet">
 
 <!-- Template Main CSS File -->
-<link href="../resources/css/style.css" rel="stylesheet">
+<link href="../../resources/css/style.css" rel="stylesheet">
 
 <!-- 링크 추가 재욱 -->
-<link href="../resources/css/stylejw.css" rel="stylesheet">
+<link href="../../resources/css/stylejw.css" rel="stylesheet">
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet"> 
 <!-- 링크 추가 재욱끝 -->
 <!-- 현래 css -->
-<link href="../resources/css/user.css" rel="stylesheet"/>
+<link href="../../resources/css/user.css" rel="stylesheet"/>
 <!-- size css -->
-<link href="../resources/css/publicSize.css" rel="stylesheet" />
+<link href="../../resources/css/publicSize.css" rel="stylesheet" />
 
 <!-- summernote -->
 <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css"
@@ -109,7 +109,7 @@ rel="stylesheet">
 								style="margin-left: 10px">Login</a>
 						</c:when>
 						<c:otherwise>
-							<a class="login-nav scrollto" href="/logout"
+							<a class="login-nav scrollto" href="/test/index"
 								style="margin-left: 10px">Logout</a>
 						</c:otherwise>
 					</c:choose>
@@ -122,7 +122,7 @@ rel="stylesheet">
 
 
 	<!-- Core theme JS-->
-	<script src="../resources/js/scripts.js"></script>
+	<script src="../../resources/js/scripts.js"></script>
 	
 	<!-- 링크 추가 지희 -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

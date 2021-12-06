@@ -103,14 +103,14 @@ public class TestController {
 	}
 
 	
-	@GetMapping("/")
-	public String test4() {
-		return "indextest";
-	}
-
-	@GetMapping("/test/index")
-	public String test5() {
-		return "index";
+	/*
+	 * @GetMapping("/") public String test4() { return "indextest"; }
+	 * 
+	 * @GetMapping("/test/index") public String test5() { return "index"; }
+	 */
+	@GetMapping("/board/mine")
+	public String test6() {
+		return "board/detail2";
 	}
 	
 	

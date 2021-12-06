@@ -25,6 +25,7 @@
 			                    <option value="여행">여행</option>
 			                    <option value="영화">영화</option>
 			                    <option value="요리">요리</option>
+			                    <option value="IT">IT</option>
 	                    	</select>
 					</div>
 		</div>	        	
@@ -58,7 +59,7 @@
 		<div class="row">	                
 		        	<div class="text_left pad-t10">
 		            	<label for="link" >MyTube 가치평가 연동주소:</label>
-		                <input type="text" class="form-control" name="yAddress" placeholder="주소를 입력하세요">
+		                <input type="text" class="form-control" name="youtube" placeholder="주소를 입력하세요">
 		            </div>
 		</div>
 		

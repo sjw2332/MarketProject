@@ -44,13 +44,13 @@
                                     <th scope="row" >
                                   	  <h5><span class="badge badge-danger">판매완료</span></h5>
                                     </th>
-                                    <td>게임</td>
-                                    <td>Final Fantasy 5 팝니다</td>
+                                    <td>IT</td>
+                                    <td>생활코딩 채널 팝니다</td>
                                     <td>
-                                      5,000만원
+                                      1,000만원
                                     </td>
                                     <td>
-                                        2021-10-19
+                                        2021-11-10
                                     </td>
                                 </tr>
                             </tbody>
