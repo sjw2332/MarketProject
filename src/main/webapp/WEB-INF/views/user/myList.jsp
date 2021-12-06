@@ -74,7 +74,7 @@
                                     <h5><span class="badge badge-success">거래중</span></h5>
                                     </th>
                                     <td>IT</td>
-                                    <td>생활코딩 채널 팝니다</td>
+                                    <td><a href="/board/mine">생활코딩 채널 팝니다</a></td>
                                     <td>
                                       1,000만원
                                     </td>

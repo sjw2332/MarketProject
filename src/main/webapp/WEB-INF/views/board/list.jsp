@@ -45,7 +45,7 @@
                             <tbody class="text-center">
                                	<c:forEach var="board" items="${boardsEntity.content}">
 	                        <!-- 해당 페이지에 띄울 거래단계 설정 -->
-	                        	<c:if test="${board.tradelvl eq 1}"> 
+	                        	<c:if test="${board.tradelvl eq 0}"> 
                                
                                 <tr> 
                                     <th scope="row" >

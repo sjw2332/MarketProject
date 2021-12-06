@@ -79,12 +79,12 @@ p {
 			<section id="testValue">
 				<div class="container" data-aos="zoom-in">
 					<div class="section-header">
-						<form method="POST" action="#">
+						<form action="javascript:evalink(event)" method="post">
 							<div class="row justify-content-center">
 								<div class="col-lg-10col-md-20 d-flex">
-									<input type="text" class="form-control"
-										placeholder="계정명 or 주소 입력">
-									<button type="submit" class="ms-2">search</button>
+									<input type="text" class="form-control" id="yid"
+										placeholder="계정명 입력">
+									<button type="submit" class="ms-2" >search</button>
 								</div>
 							</div>
 						</form>
@@ -176,7 +176,16 @@ p {
 	</section>
 	<!-- End Gallery Section -->
 
-
+	<script>
+		function evalink(event){
+			//event.preventDefault();
+			var addr = "http://localhost:8080/eva/";
+			var txt  = document.getElementById("yid").value;
+			console.log(txt);
+			window.location.href = addr.concat(txt);
+		}
+	
+	</script>
 
 
 	<!-- End #main -->
@@ -187,15 +196,22 @@ p {
 		class="back-to-top d-flex align-items-center justify-content-center"><i
 		class="bi bi-arrow-up-short"></i></a>
 
+	
 	<!-- Vendor JS Files -->
 	<script src="../resources/vendor/aos/aos.js"></script>
 	<script src="../resources/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 	<script src="../resources/vendor/glightbox/js/glightbox.min.js"></script>
 	<script src="../resources/vendor/php-email-form/validate.js"></script>
-	<script src="../resources/vendor/swiper/swiper-bundle.min.js"></script>
+	<!-- <script src="../resources/vendor/swiper/swiper-bundle.min.js"></script> -->
 
 	<!-- Template Main JS File -->
 	<script src="../resources/js/main.js"></script>
+	
+	
+	
 </body>
+
+	
+
 
 </html>

@@ -57,6 +57,7 @@ public class BoardController {
 		PageRequest pageRequest = PageRequest.of(page, 3, Sort.by(Sort.Direction.DESC, "writtenDate"));
 		Page<Board> boardsEntity = boardRepository.findAll(pageRequest);
 		model.addAttribute("boardsEntity", boardsEntity);
+		System.out.println(boardsEntity);
 		return "board/list";
 	}
 	

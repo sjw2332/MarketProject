@@ -126,24 +126,25 @@ body {
 					</div>	
 					<div class="input-form col-md-12 mx-auto">
 						<!-- col-md-12:  mx-auto : 수평 센터 처리 -->
-						<h4 class="mb-3">${boardEntity.title}</h4>
+						<h4 class="mb-3">생활코딩 채널 팝니다</h4>
 						<hr class="my-hr2" style="height: 2px">
-						<div class="conten3-category" style="text-align: center">${boardEntity.category }</div>
+						<div class="conten3-category" style="text-align: center">IT</div>
 						<br>
-						<div class="conten3" style="text-align: center">가격: ${boardEntity.price } 만원 </div>
+						<div class="conten3" style="text-align: center">가격: 1000 만원 </div>
 						<br>
-						<div class="conten3" style="text-align: center;"> 판매자: ${boardEntity.user.email}</div>
+						<div class="conten3" style="text-align: center;"> 판매자: sjw2332@gmail.com</div>
 						<hr class="my-hr2" style="height: 2px">
 						<div class="conten2">
-						${boardEntity.content }					
+						채널 팝니다.				
 						</div>
 						<hr class="my-hr2" style="height: 2px">
-						<div class="conten-yaddress">https://www.youtube.com/c/${boardEntity.youtube }  </div>
+						<div class="conten-yaddress">https://www.youtube.com/c/생활코딩1  </div>
 						<br>
 						<button type="button" class="btn btn-danger btn-block" onclick="openPop()">가치평가보기</button>
 						<br>
-							<button type="button" class="btn btn-info btn-block"  onclick="buyById(${boardEntity.board_id})">구매하기</button>
+							<button type="button" class="btn btn-warning btn-block"  onclick="alert('승인하시겠습니까')">최종거래확인</button>
 
+					</div>
 				</div>
 
 			</div>
@@ -210,6 +211,8 @@ body {
 function openPop(){
 	var popup = window.open('http://localhost:8080/test/eva', '테스트','width=800, height=600')
 }
+
+
 </script>
  
  
